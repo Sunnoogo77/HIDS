@@ -4,7 +4,7 @@
 $hashFile = "hashes.json"
 $logFile = "hids.log"
 
-# Function to write logs
+#Function pour les logs
 function Write-Log {
     param (
         [string]$Message
@@ -15,72 +15,87 @@ function Write-Log {
     Write-Host $logEntry -ForegroundColor Yellow
 }
 
-# Function to get file hash
+# File Hash
 function Get-FileHashValue {
-    param (
+    param(
         [string]$FilePath
     )
-    if (Test-Path $FilePath) {
+    if (Test-Path $FilePath){
         return (Get-FileHash -Path $FilePath -Algorithm SHA256).Hash
-    } else {
+    }else {
         return $null
     }
 }
 
-# Function to save hashes
-function Save-Hashes {
-    param (
-        [Hashtable]$Hashes
+# Saving File hashes
+function save-Hashes {
+    param(
+        [hashtable]$Hashes
     )
     $Hashes | ConvertTo-Json -Depth 10 | Set-Content $hashFile
 }
 
-# Function to load hashes
+#Loading Hashes
 function Load-Hashes {
-    if (Test-Path $hashFile) {
-        return Get-Content $hashFile | ConvertFrom-Json
+    if (Test-Path $hashFile){
+        $data = Get-content $hashFile | ConvertFrom-Json
+
+        $hashes = @{}
+        if ($data -is [PSCustomObject]){
+            $data.PSObject.Properties | ForEach-Object { $hashes[$_.Name] = $_.Value }
+        }else {
+            $hashes = $data
+        }
+        return $hashes
     } else {
         return @{}
     }
 }
 
-# User selects files to monitor
-Write-Host "Enter full paths of files to monitor (comma-separated): " -ForegroundColor Cyan
-$inputFiles = Read-Host
+#Selection of files 
+Write-Host "Entrer full paths of files to monitor (come-separated): " -ForegroundColor Cyan
+$inputFIles = Read-Host
 $files = $inputFiles -split "," | ForEach-Object { $_.Trim() }
 
 # Load or initialize hashes
 $hashes = Load-Hashes
 
-# Calculate and store initial hashes
-foreach ($file in $files) {
-    $hash = Get-FileHashValue -FilePath $file
-    if ($hash -ne $null) {
+#verify if $hashes is an Hashtable
+if (-not ($hashes -is [hashtable])) {
+    $hashes = @{}
+}
+
+#Calculate and store initial hashes
+foreach ($files in $files){
+    # $hash = Get-FileHashValue -FilePath $file
+    if(Test-Path $file) {
+        $hash = Get-FileHashValue -FilePath $file
         $hashes[$file] = $hash
         Write-Host "Monitoring: $file (Hash: $hash)" -ForegroundColor Green
         Write-Log "Added file: $file (Hash: $hash)"
     } else {
-        Write-Host "WARNING: File not found - $file" -ForegroundColor Red
-        Write-Log "WARNING: File not found - $file"
+        Write-Host "WARNING: File Not Found - $file" -ForegroundColor Red
+        Write-Log "WARNING: File not Found - $file"
     }
 }
 
 # Save initial hashes
-Save-Hashes -Hashes $hashes
+save-Hashes -Hashes $hashes
 
-Write-Host "Monitoring started. Press Ctrl+C to stop." -ForegroundColor Cyan
-Write-Log "Monitoring started."
+Write-Host "Monitoring started. Press Crtl+C to Stop." -ForegroundColor Cyan
+Write-Log "Monitoring Started."
 
-while ($true) {
-    foreach ($file in $files) {
-        $newHash = Get-FileHashValue -FilePath $file
-        if ($newHash -ne $null) {
+while ($true){
+    foreach ($file in $files){
+    # $newHash =  Get-FileHashValue -FilePath $file
+        if(Test-Path $file ){
+            $newHash =  Get-FileHashValue -FilePath $file
             if ($hashes[$file] -ne $newHash) {
-                # Get the exact modification timestamp
+                #The exact modiication timestamp
                 $modificationTime = (Get-Item $file).LastWriteTime
                 $oldHash = $hashes[$file]
                 $username = (Get-ACL $file).Owner
-                
+
                 Write-Host "ALERT: File changed! $file" -ForegroundColor Red
                 Write-Log "File modified: $file | User: $username | Detected at: $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss') | Modified at: $modificationTime | Old Hash: $oldHash | New Hash: $newHash"
 
@@ -89,9 +104,11 @@ while ($true) {
                 Save-Hashes -Hashes $hashes
             }
         } else {
-            Write-Host "WARNING: File missing - $file" -ForegroundColor Red
-            Write-Log "WARNING: File missing - $file"
+            Write-Host "WARNING: File Missing - $file" -ForegroundColor Red
+            Write-Log "WARNING: File Missing -$file"
         }
     }
     Start-Sleep -Seconds 10
 }
+
+
