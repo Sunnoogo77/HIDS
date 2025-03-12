@@ -1,0 +1,14 @@
+{
+    "Files":  [
+                  "C:\\Users\\tapso\\OneDrive\\Documents\\resuktat.txt",
+                  "C:\\Users\\tapso\\OneDrive\\Documents\\Nouveau Document texte.txt"
+              ],
+    "Interval":  30,
+    "Ips":  [
+                "8.8.8.8",
+                "20.198.162.76",
+                "127.0.0.1",
+                "192.168.1.1"
+            ],
+    "Folders":  "C:\\Users\\tapso\\OneDrive\\Documents\\Cloud_Practice"
+}
