@@ -1,5 +1,11 @@
+
+
+#
+#
+#MonitorFOlder :
 #Import logs
 . "$PSScriptRoot\logs.ps1"
+. "$PSScriptRoot\alerts.ps1"  # Import alerts
 
 #Load configurations
 $configFile = "$PSScriptRoot\..\data\config.json"
@@ -78,6 +84,9 @@ function Monitor-Folders {
 
                         Write-Host "ALERT: Folder changed! $folder" -ForegroundColor Red
                         Write-Log "Folder modified: $folder | User: $username | Detected at: $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss') | Modified at: $modificationTime | Old Hash: $oldHash | New Hash: $newFolderHash"
+
+                        # Send email alert
+                        Send-EmailAlert -Subject "Folder Change Alert" -Body "The folder: $folder was modified at $modificationTime."
 
                         $monitoredFolders[$folder] = $newFolderHash
                     }

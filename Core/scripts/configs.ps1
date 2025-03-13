@@ -15,6 +15,12 @@ if (!(Test-Path $configFile)) {
         "files" = @()
         "folders" = @()
         "ips" = @()
+        "email" = @{
+            "smtpServer" = "smtp.office365.com"
+            "smtpPort" = 587
+            "sender" = ""
+            "recipients" = @()
+        }
     }
     $defaultConfig | ConvertTo-Json -Depth 10 | Set-Content $configFile
 }
@@ -26,19 +32,25 @@ $config = Get-Content $configFile | ConvertFrom-Json
 if ($Action -eq "LIST") {
     Write-Host "Current Configuration:" -ForegroundColor Cyan
     Write-Host "Scan interval: $($config.interval) seconds" -ForegroundColor Yellow
+    Write-Host "`nEmail Settings:" -ForegroundColor Cyan
+    Write-Host "SMTP Server: $($config.email.smtpServer)" -ForegroundColor Yellow
+    Write-Host "SMTP Port: $($config.email.smtpPort)" -ForegroundColor Yellow
+    Write-Host "Sender Email: $($config.email.sender)" -ForegroundColor Yellow
+    Write-Host "Recipients: $($config.email.recipients -join ', ')" -ForegroundColor Yellow
+
 
     if ($config.files.Count -gt 0) {
-        Write-Host "Monitored Files:"
+        Write-Host "`nMonitored Files:"
         $config.files | ForEach-Object { Write-Host "  - $_" -ForegroundColor Green }
     } else { Write-Host "No monitored files." -ForegroundColor Red }
 
     if ($config.folders.Count -gt 0) {
-        Write-Host "Monitored Folders:"
+        Write-Host "`nMonitored Folders:"
         $config.folders | ForEach-Object { Write-Host "  - $_" -ForegroundColor Green }
     } else { Write-Host "No monitored folders." -ForegroundColor Red }
 
     if ($config.ips.Count -gt 0) {
-        Write-Host "Monitored IPs:"
+        Write-Host "`nMonitored IPs:"
         $config.ips | ForEach-Object { Write-Host "  - $_" -ForegroundColor Green }
     } else { Write-Host "No monitored IPs." -ForegroundColor Red }
     exit
@@ -103,6 +115,37 @@ if ($Action -eq "SET-INTERVAL") {
         Write-Host "Interval updated to $Value seconds." -ForegroundColor Green
     } else {
         Write-Host "Invalid interval value." -ForegroundColor Red
+    }
+}
+
+# ACTION: SET EMAIL CONFIGURATION (ADD/REMOVE RECIPIENTS)
+if ($Action -eq "SET-EMAIL") {
+    if ($Type -eq "ADD-Recipient") {
+        $emails = $Value -split "," | ForEach-Object { $_.Trim() }
+
+        foreach ($email in $emails) {
+            if ($email -match "^\S+@\S+\.\S+$") {
+                if ($config.email.recipients -notcontains $email) {
+                    $config.email.recipients += $email
+                    Write-Host "Recipient added: $email" -ForegroundColor Green
+                } else {
+                    Write-Host "Recipient already exists: $email" -ForegroundColor Yellow
+                }
+            } else {
+                Write-Host "Invalid email format: $email" -ForegroundColor Red
+            }
+        }
+    }
+    elseif ($Type -eq "REMOVE-Recipient") {
+        if ($config.email.recipients -contains $Value) {
+            $config.email.recipients = $config.email.recipients | Where-Object { $_ -ne $Value }
+            Write-Host "Recipient removed: $Value" -ForegroundColor Green
+        } else {
+            Write-Host "Recipient not found: $Value" -ForegroundColor Red
+        }
+    }
+    else {
+        Write-Host "Invalid TYPE value. Use ADD-Recipient or REMOVE-Recipient" -ForegroundColor Red
     }
 }
 

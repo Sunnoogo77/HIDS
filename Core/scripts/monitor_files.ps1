@@ -1,12 +1,10 @@
-# #Import logs
-# . .\Core\scripts\logs.ps1
 
-# #Load configurations
-# $configFile = ".\Core\data\config.json"
 
+#Monitor FIles
 
 #Import logs
 . "$PSScriptRoot\logs.ps1"
+. "$PSScriptRoot\alerts.ps1"
 
 #Load configurations
 $configFile = "$PSScriptRoot\..\data\config.json"
@@ -17,13 +15,13 @@ if(!(Test-Path $configFile)){
     exit
 }
 
-#upload configuration of the monitoring files
+# Load monitored files
 $config = Get-Content $configFile | ConvertFrom-Json
 $monitoredFiles = @{}
 $interval = $config.interval
 
 #Verify if the configuration file is empty
-if($config.files -eq $null -or $config.Files.Count -eq 0){
+if($null -eq $config.files -or $config.Files.Count -eq 0){
     Write-Host "No files to monitor, please add files to monitor in the configuration file." -ForegroundColor Yellow
     exit
 }
@@ -33,7 +31,7 @@ foreach ($file in $config.files){
     if(Test-Path $file){
         # $hash = Get-FileHashValue -FilePath $file
         $monitoredFiles[$file] = (Get-FileHash -Path $file -Algorithm  SHA256).Hash
-        Write-Host "Monitoring: $file (Hash: $hash)" -ForegroundColor Green
+        Write-Host "Monitoring: $file (Hash: $hash)" -ForegroundColor Cyan
         Write-Log "Added file: $file (Hash: $hash)"
     }else{
         Write-Host "WARNING: File Not Found - $file" -ForegroundColor Red
@@ -56,12 +54,18 @@ function Monitor-Files{
                     $oldHash = $monitoredFiles[$file]
                     $username = (Get-ACL $file).Owner
 
+                    $alertMessage = "File changed! $file | Modified at: $modificationTime | User: $username | Old Hash: $oldHash | New Hash: $newHash"
                     Write-Host "ALERT: File changed! $file | Modified at: $modificationTime || New Hash: $newHash" -ForegroundColor Red
                     Write-Log "File modified: $file | User: $username | Modified at: $modificationTime | Old Hash: $oldHash | New Hash: $newHash"
 
+                    # Add the alert to the queue
+                    Add-AlertToQueue -Message $alertMessage
 
                     # Update hash
                     $monitoredFiles[$file] = $newHash
+
+                    # At the end of the interval, send all alerts in one email
+                    Send-BatchedEmailAlerts
                 }
             }else{
                 Write-Host "WARNING: File Missing - $file" -ForegroundColor Red
@@ -76,3 +80,4 @@ function Monitor-Files{
 
 #Start monitoring
 Monitor-Files
+

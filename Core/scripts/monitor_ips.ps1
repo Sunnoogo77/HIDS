@@ -1,5 +1,11 @@
+
+
+#
+#
+#Monitor IPS
 #Import logs
 . .\Core\scripts\logs.ps1
+. .\Core\scripts\alerts.ps1  # Import alerts
 
 #Load configurations
 $configFile = ".\Core\data\config.json"
@@ -58,6 +64,10 @@ function Monitor-Ips {
                 if($previousState.ContainsKey($ip)){
                     Write-Host "ALERT: Connection to $ip lost!" -ForegroundColor Red
                     Write-Log "ALERT: Connection to $ip lost!"
+
+                    # Send email alert
+                    Send-EmailAlert -Subject "IP Connection Lost" -Body "Connection to $ip was lost."
+
                     $previousState.Remove($ip)
                 }
             }
