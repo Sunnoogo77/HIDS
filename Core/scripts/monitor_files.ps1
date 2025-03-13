@@ -1,10 +1,5 @@
-
-
-#Monitor FIles
-
 #Import logs
 . "$PSScriptRoot\logs.ps1"
-. "$PSScriptRoot\alerts.ps1"
 
 #Load configurations
 $configFile = "$PSScriptRoot\..\data\config.json"
@@ -29,10 +24,9 @@ if($null -eq $config.files -or $config.Files.Count -eq 0){
 #Initialize the monitored files hashes
 foreach ($file in $config.files){
     if(Test-Path $file){
-        # $hash = Get-FileHashValue -FilePath $file
         $monitoredFiles[$file] = (Get-FileHash -Path $file -Algorithm  SHA256).Hash
-        Write-Host "Monitoring: $file (Hash: $hash)" -ForegroundColor Cyan
-        Write-Log "Added file: $file (Hash: $hash)"
+        Write-Host "Monitoring: $file (Hash: $($monitoredFiles[$file]))" -ForegroundColor Cyan
+        Write-Log "Added file: $file (Hash: $($monitoredFiles[$file]))"
     }else{
         Write-Host "WARNING: File Not Found - $file" -ForegroundColor Red
         Write-Log "WARNING: File not Found - $file"
@@ -43,6 +37,7 @@ Write-Host "File Monitoring started. Press Crtl+C to Stop." -ForegroundColor Gre
 
 #Monitoring function
 function Monitor-Files{
+    # $alerts = @() # Initialiser alerts en dehors de la boucle while
     while ($true){
         $keys = $monitoredFiles.Keys | ForEach-Object {$_}
 
@@ -54,18 +49,26 @@ function Monitor-Files{
                     $oldHash = $monitoredFiles[$file]
                     $username = (Get-ACL $file).Owner
 
-                    $alertMessage = "File changed! $file | Modified at: $modificationTime | User: $username | Old Hash: $oldHash | New Hash: $newHash"
+                    $alertMessage = "File changed! $file || By: $username"
                     Write-Host "ALERT: File changed! $file | Modified at: $modificationTime || New Hash: $newHash" -ForegroundColor Red
-                    Write-Log "File modified: $file | User: $username | Modified at: $modificationTime | Old Hash: $oldHash | New Hash: $newHash"
+                    Write-Log "Folder changed! $file | User: $username | Detected at: $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss') | Modified at: $modificationTime | Old Hash: $oldHash | New Hash: $newHash"
 
                     # Add the alert to the queue
-                    Add-AlertToQueue -Message $alertMessage
+                    $alert = @{
+                        Timestamp = $modificationTime
+                        Message = $alertMessage
+                    }
+
+                    
+                    # Add the alert to the alerts.json file
+                    $alertsFile = "$PSScriptRoot\..\data\alerts.json"
+                    
+                    $alerts = Get-Content $alertsFile | ConvertFrom-Json
+                    $alerts.files += $alert
+                    $alerts | ConvertTo-Json -Depth 10 | Set-Content $alertsFile
 
                     # Update hash
                     $monitoredFiles[$file] = $newHash
-
-                    # At the end of the interval, send all alerts in one email
-                    Send-BatchedEmailAlerts
                 }
             }else{
                 Write-Host "WARNING: File Missing - $file" -ForegroundColor Red
@@ -80,4 +83,3 @@ function Monitor-Files{
 
 #Start monitoring
 Monitor-Files
-

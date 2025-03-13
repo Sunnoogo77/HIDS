@@ -1,11 +1,5 @@
-
-
-#
-#
-#MonitorFOlder :
 #Import logs
 . "$PSScriptRoot\logs.ps1"
-. "$PSScriptRoot\alerts.ps1"  # Import alerts
 
 #Load configurations
 $configFile = "$PSScriptRoot\..\data\config.json"
@@ -38,7 +32,8 @@ function Get-FolderHash {
     $files = Get-ChildItem -Path $FolderPath -Recurse -File | Sort-Object -Property FullName
 
     if ($files.Count -eq 0) {
-        return (Get-FileHash -InputStream ([System.IO.MemoryStream]::new([System.Text.Encoding]::UTF8.GetBytes(""))) -Algorithm SHA256).Hash
+        $hash = (Get-FileHash -InputStream ([System.IO.MemoryStream]::new([System.Text.Encoding]::UTF8.GetBytes(""))) -Algorithm SHA256).Hash
+        return @{ Hash = $hash; Files = @() }
     }
 
     foreach ($file in $files) {
@@ -46,20 +41,21 @@ function Get-FolderHash {
             $hash = (Get-FileHash -Path $file.FullName -Algorithm SHA256).Hash
             $hashString += $hash
         } catch {
-            Write-Warning "Failed to hash file: $($file.FullName)"
+            Write-Warning "Failed to hash file: $($file.FullName) - $_"
         }
     }
 
-    return (Get-FileHash -InputStream ([System.IO.MemoryStream]::new([System.Text.Encoding]::UTF8.GetBytes($hashString))) -Algorithm SHA256).Hash
+    $folderHash = (Get-FileHash -InputStream ([System.IO.MemoryStream]::new([System.Text.Encoding]::UTF8.GetBytes($hashString))) -Algorithm SHA256).Hash
+    return @{ Hash = $folderHash; Files = $files }
 }
 
 #Initialized folder with their initial state
 foreach ($folder in $config.folders) {
     if (Test-Path $folder) {
-        $folderHash = Get-FolderHash -FolderPath $folder
-        $monitoredFolders[$folder] = $folderHash
-        Write-Host "Monitoring folder: $folder (Hash: $folderHash)" -ForegroundColor Cyan
-        Write-Log "Added folder: $folder (Hash: $folderHash)"
+        $folderHashInfo = Get-FolderHash -FolderPath $folder
+        $monitoredFolders[$folder] = $folderHashInfo
+        Write-Host "Monitoring folder: $folder (Hash: $($folderHashInfo.Hash))" -ForegroundColor Cyan
+        Write-Log "Added folder: $folder (Hash: $($folderHashInfo.Hash))"
     } else {
         Write-Host "WARNING: Folder Not Found - $folder" -ForegroundColor Red
         Write-Log "WARNING: Folder not Found - $folder"
@@ -76,22 +72,44 @@ function Monitor-Folders {
         foreach ($folder in $keys) {
             if (Test-Path $folder) {
                 try {
-                    $newFolderHash = Get-FolderHash -FolderPath $folder
-                    if ($monitoredFolders[$folder] -ne $newFolderHash) {
+                    $newFolderHashInfo = Get-FolderHash -FolderPath $folder
+                    if ($monitoredFolders[$folder].Hash -ne $newFolderHashInfo.Hash) {
                         $modificationTime = (Get-Item $folder).LastWriteTime
-                        $oldHash = $monitoredFolders[$folder]
+                        $oldHash = $monitoredFolders[$folder].Hash
                         $username = (Get-ACL $folder).Owner
 
-                        Write-Host "ALERT: Folder changed! $folder" -ForegroundColor Red
-                        Write-Log "Folder modified: $folder | User: $username | Detected at: $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss') | Modified at: $modificationTime | Old Hash: $oldHash | New Hash: $newFolderHash"
+                        # Compare file lists
+                        $oldFiles = $monitoredFolders[$folder].Files
+                        $newFiles = $newFolderHashInfo.Files
 
-                        # Send email alert
-                        Send-EmailAlert -Subject "Folder Change Alert" -Body "The folder: $folder was modified at $modificationTime."
+                        $addedFiles = Compare-Object -ReferenceObject $oldFiles -DifferenceObject $newFiles | Where-Object { $_.SideIndicator -eq "=>" } | ForEach-Object { $_.InputObject.FullName }
+                        $removedFiles = Compare-Object -ReferenceObject $oldFiles -DifferenceObject $newFiles | Where-Object { $_.SideIndicator -eq "<=" } | ForEach-Object { $_.InputObject.FullName }
+                        $modifiedFiles = Compare-Object -ReferenceObject $oldFiles -DifferenceObject $newFiles | Where-Object { $_.SideIndicator -eq "<=>" } | ForEach-Object { $_.InputObject.FullName }
 
-                        $monitoredFolders[$folder] = $newFolderHash
+                        $alertMessage = "Folder changed! $folder || By: $username"
+                        if ($addedFiles.Count -gt 0) { $alertMessage += " || Added files: $($addedFiles -join ', ')" }
+                        if ($removedFiles.Count -gt 0) { $alertMessage += " || Removed files: $($removedFiles -join ', ')" }
+                        if ($modifiedFiles.Count -gt 0) { $alertMessage += " || Modified files: $($modifiedFiles -join ', ')" }
+
+                        Write-Host $alertMessage -ForegroundColor Red
+                        Write-Log $alertMessage + " | Detected at: $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss') | Modified at: $modificationTime | Old Hash: $oldHash | New Hash: $($newFolderHashInfo.Hash) | Added files: $($addedFiles -join ', ') | Removed files: $($removedFiles -join ', ') | Modified files: $($modifiedFiles -join ', ')"
+
+                        # Add the alert to the queue
+                        $alert = @{
+                            Timestamp = $modificationTime
+                            Message = $alertMessage
+                        }
+
+                        # Ajouter l'alerte au tableau alerts
+                        $alertsFile = "$PSScriptRoot\..\data\alerts.json"
+                        $alerts = Get-Content $alertsFile | ConvertFrom-Json
+                        $alerts.folders += $alert
+                        $alerts | ConvertTo-Json -Depth 10 | Set-Content $alertsFile
+
+                        $monitoredFolders[$folder] = $newFolderHashInfo
                     }
                 } catch {
-                    Write-Warning "Failed to calculate hash for folder: $folder"
+                    Write-Warning "Failed to calculate hash for folder: $folder - $_"
                 }
             } else {
                 Write-Host "WARNING: Folder Not Found - $folder" -ForegroundColor Red
