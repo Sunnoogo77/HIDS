@@ -51,7 +51,7 @@ function Monitor-Files{
 
                     $alertMessage = "File changed! $file || By: $username"
                     Write-Host "ALERT: File changed! $file | Modified at: $modificationTime || New Hash: $newHash" -ForegroundColor Red
-                    Write-Log "Folder changed! $file | User: $username | Detected at: $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss') | Modified at: $modificationTime | Old Hash: $oldHash | New Hash: $newHash"
+                    Write-Log -Category "Files" -Message "File changed! $file | User: $username | Detected at: $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss') | Modified at: $modificationTime | Old Hash: $oldHash | New Hash: $newHash"
 
                     # Add the alert to the queue
                     $alert = @{

@@ -13,30 +13,63 @@ if(!(Test-Path $logTxtFile)){ New-Item -ItemType File -Path $logTxtFile | Out-Nu
 if(!(Test-Path $logJsonFile)){ @() | ConvertTo-Json  -Depth 10| Set-Content $logJsonFile }
 
 #Function to write logs
+# function Write-Log {
+#     param (
+#         [string]$Message
+#     )
+#     $timestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
+#     $logEntry = @{
+#         "timestamp" = $timestamp
+#         "event" = $Message
+#     }
+
+#     #Write in hids.json
+#     try{
+#         $logs = Get-Content $logJsonFile | ConvertFrom-Json
+#         if ($logs -is [System.Array[]]){
+#             $logs += $logEntry
+#         }else{
+#             $logs = @($logs) + $logEntry
+#         }
+#     } catch {
+#         $logs = @($logEntry)
+#     }
+#     $logs | ConvertTo-Json -Depth 10 | Set-Content $logJsonFile
+
+#     #Write in hids.log
+#     $logEntry = "[$timestamp] $Message"
+#     Add-Content -Path $logTxtFile -Value $logEntry
+# }
+
+
 function Write-Log {
     param (
+        [string]$Category,  # File, Folder, IP
         [string]$Message
     )
+    
     $timestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
     $logEntry = @{
         "timestamp" = $timestamp
-        "event" = $Message
+        "category"  = $Category
+        "event"     = $Message
     }
 
-    #Write in hids.json
-    try{
+    $logTxtFile = "$PSScriptRoot\..\logs\hids.log"
+    $logJsonFile = "$PSScriptRoot\..\logs\hids.json"
+
+    # Ajout au fichier JSON
+    try {
         $logs = Get-Content $logJsonFile | ConvertFrom-Json
-        if ($logs -is [System.Array[]]){
-            $logs += $logEntry
-        }else{
-            $logs = @($logs) + $logEntry
+        if (-not $logs -or $logs -isnot [System.Collections.IList]) {
+            $logs = @()
         }
     } catch {
-        $logs = @($logEntry)
+        $logs = @()
     }
+    $logs += $logEntry
     $logs | ConvertTo-Json -Depth 10 | Set-Content $logJsonFile
 
-    #Write in hids.log
-    $logEntry = "[$timestamp] $Message"
-    Add-Content -Path $logTxtFile -Value $logEntry
+    # Ajout au fichier texte
+    Add-Content -Path $logTxtFile -Value "[$timestamp] [$Category] $Message"
 }

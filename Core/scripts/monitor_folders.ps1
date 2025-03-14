@@ -92,7 +92,7 @@ function Monitor-Folders {
                         if ($modifiedFiles.Count -gt 0) { $alertMessage += " || Modified files: $($modifiedFiles -join ', ')" }
 
                         Write-Host $alertMessage -ForegroundColor Red
-                        Write-Log $alertMessage + " | Detected at: $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss') | Modified at: $modificationTime | Old Hash: $oldHash | New Hash: $($newFolderHashInfo.Hash) | Added files: $($addedFiles -join ', ') | Removed files: $($removedFiles -join ', ') | Modified files: $($modifiedFiles -join ', ')"
+                        Write-Log -Category "Folders" -Message $alertMessage + " | Detected at: $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss') | Modified at: $modificationTime | Old Hash: $oldHash | New Hash: $($newFolderHashInfo.Hash) | Added files: $($addedFiles -join ', ') | Removed files: $($removedFiles -join ', ') | Modified files: $($modifiedFiles -join ', ')"
 
                         # Add the alert to the queue
                         $alert = @{

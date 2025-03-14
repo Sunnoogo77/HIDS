@@ -1,5 +1,5 @@
 param (
-    [int]$Interval = 15 # Intervalle par défaut : 1 minute
+    [int]$Interval = 15 # Intervalle par défaut : 15 secondes
 )
 
 # Load required .NET libraries
@@ -8,6 +8,7 @@ Add-Type -Path "C:\Program Files\PackageManagement\NuGet\Packages\MailKit.4.11.0
 
 # Configuration file path
 $configFile = "$PSScriptRoot\..\data\config.json"
+$alertsFile = "$PSScriptRoot\..\data\alerts.json"
 
 if (!(Test-Path $configFile)) {
     Write-Host "Error: Configuration file not found. Run config.ps1 to set up monitoring." -ForegroundColor Red
@@ -32,20 +33,77 @@ $smtpPassword = $credential.GetNetworkCredential().Password
 $emailSender = $smtpUser
 $emailRecipients = $config.email.recipients
 
-function Count-Alerts {
+### 🛠 **1. Vérifier l'intégrité de `alerts.json`**
+function Validate-AlertsJson {
     param (
-        [PSCustomObject]$Alerts
+        [string]$FilePath
     )
 
-    if ($Alerts -eq $null) {
-        return 0
+    if (!(Test-Path $FilePath)) {
+        Write-Host "Alert file not found, creating a new one..." -ForegroundColor Yellow
+        Reset-AlertsFile -FilePath $FilePath
+        return $true
     }
 
-    return ($Alerts.files.Count + $Alerts.folders.Count + $Alerts.ips.Count)
+    try {
+        $alerts = Get-Content $FilePath | ConvertFrom-Json
+        if (-not $alerts -or -not $alerts.PSObject.Properties.Name -contains "files" -or `
+            -not $alerts.PSObject.Properties.Name -contains "folders" -or `
+            -not $alerts.PSObject.Properties.Name -contains "ips") {
+            Write-Host "Invalid structure in alerts.json, resetting file..." -ForegroundColor Red
+            Reset-AlertsFile -FilePath $FilePath
+            return $false
+        }
+        return $true
+    } catch {
+        Write-Host "Error reading alerts.json, resetting file..." -ForegroundColor Red
+        Reset-AlertsFile -FilePath $FilePath
+        return $false
+    }
 }
 
+### 🛠 **2. Réinitialiser `alerts.json` si corrompu**
+function Reset-AlertsFile {
+    param (
+        [string]$FilePath
+    )
+
+    $emptyAlerts = @{
+        files   = @()
+        folders = @()
+        ips     = @()
+    }
+    $emptyAlerts | ConvertTo-Json -Depth 10 | Set-Content -Path $FilePath
+    Write-Host "alerts.json has been reset." -ForegroundColor Yellow
+}
+
+### 🛠 **3. Limiter la taille de `alerts.json`**
+function Trim-AlertsFile {
+    param (
+        [string]$FilePath,
+        [int]$MaxEntries = 1000
+    )
+
+    if (!(Test-Path $FilePath)) { return }
+
+    $alerts = Get-Content $FilePath | ConvertFrom-Json
+
+    # Vérifier si les alertes dépassent la limite
+    if ($alerts.files.Count -gt $MaxEntries) {
+        $alerts.files = $alerts.files | Select-Object -Last $MaxEntries
+    }
+    if ($alerts.folders.Count -gt $MaxEntries) {
+        $alerts.folders = $alerts.folders | Select-Object -Last $MaxEntries
+    }
+    if ($alerts.ips.Count -gt $MaxEntries) {
+        $alerts.ips = $alerts.ips | Select-Object -Last $MaxEntries
+    }
+
+    $alerts | ConvertTo-Json -Depth 10 | Set-Content -Path $FilePath
+}
+
+### 🛠 **4. Fonction pour envoyer les alertes par e-mail**
 function Send-BatchedEmailAlerts {
-    $alertsFile = "$PSScriptRoot\..\data\alerts.json"
     if (!(Test-Path $alertsFile)) {
         Write-Host "No alerts to send." -ForegroundColor Yellow
         return
@@ -53,7 +111,6 @@ function Send-BatchedEmailAlerts {
 
     $alerts = Get-Content $alertsFile | ConvertFrom-Json
     if ($alerts -eq $null -or ($alerts.files.Count + $alerts.folders.Count + $alerts.ips.Count) -eq 0) {
-        # Write-Host "No alerts to send." -ForegroundColor Yellow
         return
     }
 
@@ -101,7 +158,6 @@ function Send-BatchedEmailAlerts {
 "@
 
     try {
-        # Create email message
         $message = New-Object MimeKit.MimeMessage
         $message.From.Add($emailSender)
         foreach ($recipient in $emailRecipients) {
@@ -109,12 +165,10 @@ function Send-BatchedEmailAlerts {
         }
         $message.Subject = "HIDS Security Alerts - $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')"
 
-        # Email body
         $bodyBuilder = New-Object MimeKit.BodyBuilder
         $bodyBuilder.HtmlBody = $htmlBody
         $message.Body = $bodyBuilder.ToMessageBody()
 
-        # SMTP Client
         $smtp = New-Object MailKit.Net.Smtp.SmtpClient
         $secureOption = [MailKit.Security.SecureSocketOptions]::StartTls
         $smtp.Connect($smtpServer, $smtpPort, $secureOption)
@@ -129,27 +183,26 @@ function Send-BatchedEmailAlerts {
         Write-Error $_
     }
 
-    # Clear the alerts file after sending the email
-    Clear-Content $alertsFile
+    Trim-AlertsFile -FilePath $alertsFile
 
     # Reset the alerts file to an empty state
-    $emptyAlerts = @{
-        files = @()
-        folders = @()
-        ips = @()
+    Reset-AlertsFile -FilePath $alertsFile
+    
+    if (!(Test-Path $alertsFile)) {
+        $emptyAlerts | ConvertTo-Json -Depth 10 | Set-Content -Path $alertsFile
     }
-    $emptyAlerts | ConvertTo-Json | Set-Content -Path $alertsFile
 }
 
-# Main loop
+### **5. Vérification avant lancement**
+Validate-AlertsJson -FilePath $alertsFile
+
+### **6. Boucle principale**
 while ($true) {
     try {
         Send-BatchedEmailAlerts
-        # Write-Host "Waiting for $Interval seconds..." -ForegroundColor Yellow
         Start-Sleep -Seconds $Interval
     } catch {
         Write-Host "Error in main loop: $_" -ForegroundColor Red
-        Write-Error $_
-        Start-Sleep -Seconds 60 # Retry after 1 minute on error
+        Start-Sleep -Seconds 60
     }
 }
