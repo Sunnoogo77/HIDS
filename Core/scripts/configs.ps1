@@ -20,6 +20,7 @@ if (!(Test-Path $configFile)) {
             "smtpPort" = 587
             "sender" = ""
             "recipients" = @()
+            "emailInterval" = 300
         }
     }
     $defaultConfig | ConvertTo-Json -Depth 10 | Set-Content $configFile
@@ -37,7 +38,7 @@ if ($Action -eq "LIST") {
     Write-Host "SMTP Port: $($config.email.smtpPort)" -ForegroundColor Yellow
     Write-Host "Sender Email: $($config.email.sender)" -ForegroundColor Yellow
     Write-Host "Recipients: $($config.email.recipients -join ', ')" -ForegroundColor Yellow
-
+    Write-Host "Email Interval: $($config.email.emailInterval) seconds" -ForegroundColor Yellow
 
     if ($config.files.Count -gt 0) {
         Write-Host "`nMonitored Files:"
@@ -146,6 +147,16 @@ if ($Action -eq "SET-EMAIL") {
     }
     else {
         Write-Host "Invalid TYPE value. Use ADD-Recipient or REMOVE-Recipient" -ForegroundColor Red
+    }
+}
+
+#ACTION: MODIFY THE EMAIL SENDING INTERVAL
+if($Action -eq "SET-EMAIL-INTERVAL"){
+    if($Value -match "^\d+$"){
+        $config.email.interval = [int]$Value
+        Write-Host "Email interval updated to $Value seconds." -ForegroundColor Green
+    }else{
+        Write-Host "Invalid interval value." -ForegroundColor Red
     }
 }
 

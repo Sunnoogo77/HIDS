@@ -17,6 +17,9 @@ if (!(Test-Path $configFile)) {
 
 $config = Get-Content $configFile | ConvertFrom-Json
 
+
+$Interval = $config.interval
+
 # Email settings for Outlook
 $smtpServer = "smtp.office365.com"
 $smtpPort = 587
