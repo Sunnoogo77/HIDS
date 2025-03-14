@@ -122,7 +122,6 @@ Get-Content ..\logs\hids.log -Tail 20
 ```powershell
 .\configs.ps1 -Action ADD -Type File -Value "C:\Users\test\document.txt"
 ```
-
 ---
 
 ## 📌 **Conclusion**
