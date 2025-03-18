@@ -57,28 +57,81 @@
 #         return jsonify({"error": f"File {file_path} not monitored."}), 404
 
 
+# #---------------------------------------------------------
 
+# from flask import Blueprint, request, jsonify
+# from app.services.file_service import FileService
+# from app.utils.auth_decorators import token_required
+# import os
+
+# files_bp = Blueprint('files', __name__, url_prefix='/files')
+# file_service = FileService()
+
+# @files_bp.route('/add', methods=['POST'])
+# @token_required
+# def add_file():
+#     data = request.get_json()
+#     file_path = data.get('file_path')
+#     if not file_path:
+#         return jsonify({'error': 'File path is required'}), 400
+#     try:
+#         file_service.add_file_to_monitoring(file_path)
+#         return jsonify({'message': 'File added successfully'}), 201
+#     except ValueError as e:
+#         return jsonify({'error': str(e)}), 400
+
+# @files_bp.route('/remove', methods=['DELETE'])
+# @token_required
+# def remove_file():
+#     data = request.get_json()
+#     file_path = data.get('file_path')
+#     if not file_path:
+#         return jsonify({'error': 'File path is required'}), 400
+#     try:
+#         file_service.remove_file_from_monitoring(file_path)
+#         return jsonify({'message': 'File removed successfully'}), 200
+#     except ValueError as e:
+#         return jsonify({'error': str(e)}), 400
+
+# @files_bp.route('/list', methods=['GET'])
+# @token_required
+# def list_files():
+#     files = file_service.list_monitored_files()
+#     return jsonify({'files': files}), 200
+
+
+
+# #---------------------------------------------------------
+
+# API/app/routes/files.py
 
 from flask import Blueprint, request, jsonify
 from app.services.file_service import FileService
+from app.utils.auth_decorators import token_required
 import os
 
 files_bp = Blueprint('files', __name__, url_prefix='/files')
 file_service = FileService()
 
 @files_bp.route('/add', methods=['POST'])
+@token_required
 def add_file():
     data = request.get_json()
     file_path = data.get('file_path')
     if not file_path:
         return jsonify({'error': 'File path is required'}), 400
+    if not os.path.exists(file_path):
+        return jsonify({'error': 'File path does not exist'}), 400
     try:
         file_service.add_file_to_monitoring(file_path)
         return jsonify({'message': 'File added successfully'}), 201
     except ValueError as e:
         return jsonify({'error': str(e)}), 400
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
 
 @files_bp.route('/remove', methods=['DELETE'])
+@token_required
 def remove_file():
     data = request.get_json()
     file_path = data.get('file_path')
@@ -89,8 +142,14 @@ def remove_file():
         return jsonify({'message': 'File removed successfully'}), 200
     except ValueError as e:
         return jsonify({'error': str(e)}), 400
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
 
 @files_bp.route('/list', methods=['GET'])
+@token_required
 def list_files():
-    files = file_service.list_monitored_files()
-    return jsonify({'files': files}), 200
+    try:
+        files = file_service.list_monitored_files()
+        return jsonify({'files': files}), 200
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500

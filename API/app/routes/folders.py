@@ -58,12 +58,14 @@
 
 from flask import Blueprint, request, jsonify
 from app.services.folder_service import FolderService
+from app.utils.auth_decorators import token_required
 import os
 
 folders_bp = Blueprint('folders', __name__, url_prefix='/folders')
 folder_service = FolderService()
 
 @folders_bp.route('/add', methods=['POST'])
+@token_required
 def add_folder():
     data = request.get_json()
     folder_path = data.get('folder_path')
@@ -76,6 +78,7 @@ def add_folder():
         return jsonify({'error': str(e)}), 400
 
 @folders_bp.route('/remove', methods=['DELETE'])
+@token_required
 def remove_folder():
     data = request.get_json()
     folder_path = data.get('folder_path')
@@ -88,6 +91,7 @@ def remove_folder():
         return jsonify({'error': str(e)}), 400
 
 @folders_bp.route('/list', methods=['GET'])
+@token_required
 def list_folders():
     folders = folder_service.list_monitored_folders()
     return jsonify({'folders': folders}), 200
