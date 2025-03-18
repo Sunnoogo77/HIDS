@@ -129,8 +129,6 @@ $configFile = "$PSScriptRoot\..\data\config.json"
 $statusFile = "$PSScriptRoot\..\data\status.json" # Centralized status file
 
 
-$stopRequested = $false
-
 # Verify if the configuration file exists
 if (!(Test-Path $configFile)) {
     Write-Host "Missing Configuration File, creating a new one... | Execute config.ps1 to initialise" -ForegroundColor Yellow
