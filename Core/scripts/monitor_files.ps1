@@ -119,8 +119,8 @@
 # }
 
 
-
-
+#
+#
 # Import logs
 . "$PSScriptRoot\logs.ps1"
 
@@ -211,6 +211,7 @@ function Monitor-Files {
                 Status = "Running"
                 Interval = $interval
                 MonitoredCount = $monitoredFiles.Count
+                monitoredFiles = $monitoredFiles.Keys | ForEach-Object { $_ }
                 LastUpdate = (Get-Date).ToString("o")
             }
             $allStatuses | ConvertTo-Json | Set-Content $statusFile
@@ -240,6 +241,7 @@ try {
         Status = "Running"
         interval = $interval
         MonitoredCount = $monitoredFiles.Count
+        monitoredFiles = $monitoredFiles.Keys | ForEach-Object { $_ }
     }
     $allStatuses | ConvertTo-Json | Set-Content $statusFile
 

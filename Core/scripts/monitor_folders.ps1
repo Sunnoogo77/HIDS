@@ -261,9 +261,11 @@ function Monitor-Folders {
                 StartTime = $startTime
                 Status = "Running"
                 MonitoredCount = $monitoredFolders.Count
+                MonitoredFolders = $monitoredFolders.Keys | ForEach-Object { $_ }
                 Interval = $interval
                 LastUpdate = (Get-Date).ToString("o")
             }
+            
             $allStatuses | ConvertTo-Json | Set-Content $statusFile
 
             Start-Sleep -Seconds $interval
@@ -288,6 +290,7 @@ try {
         Status = "Running"
         Interval = $interval
         MonitoredCount = $monitoredFolders.Count
+        MonitoredFolders = $monitoredFolders.Keys | ForEach-Object { $_ }
     }
     $allStatuses | ConvertTo-Json | Set-Content $statusFile
 

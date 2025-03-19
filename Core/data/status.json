@@ -6,11 +6,7 @@
     "Status": "Stopped"
   },
   "monitor_ips": {
-    "StartTime": "2025-03-19T13:14:11.6967409+00:00",
-    "Status": "Running",
-    "PID": 49048,
-    "MonitoredCount": 4,
-    "Interval": 10
+    "Status": "Stopped"
   },
   "alerts": {
     "Status": "Stopped"

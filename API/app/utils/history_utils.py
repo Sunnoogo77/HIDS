@@ -1,8 +1,9 @@
 import json
 import os
 from datetime import datetime
+from flask import request
 
-HISTORY_FILE = "Core/data/history.json"
+HISTORY_FILE = "../Core/data/history.json"
 
 def ensure_history_file():
     """Créer le fichier history.json s'il n'existe pas"""
