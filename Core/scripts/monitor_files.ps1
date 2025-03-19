@@ -211,6 +211,7 @@ function Monitor-Files {
                 Status = "Running"
                 Interval = $interval
                 MonitoredCount = $monitoredFiles.Count
+                LastUpdate = (Get-Date).ToString("o")
             }
             $allStatuses | ConvertTo-Json | Set-Content $statusFile
 

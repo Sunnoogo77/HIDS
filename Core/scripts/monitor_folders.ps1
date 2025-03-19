@@ -262,6 +262,7 @@ function Monitor-Folders {
                 Status = "Running"
                 MonitoredCount = $monitoredFolders.Count
                 Interval = $interval
+                LastUpdate = (Get-Date).ToString("o")
             }
             $allStatuses | ConvertTo-Json | Set-Content $statusFile
 

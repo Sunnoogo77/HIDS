@@ -432,6 +432,7 @@ function Send-BatchedEmailAlerts {
         Status = "Running"
         Interval = $Interval
         EmailCounter = $emailCounter
+        LastUpdate = (Get-Date).ToString("o")
     }
     $allStatuses | ConvertTo-Json | Set-Content $statusFile
 }

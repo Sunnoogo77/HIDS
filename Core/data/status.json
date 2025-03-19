@@ -3,14 +3,14 @@
     "Status": "Stopped"
   },
   "monitor_folders": {
-    "Interval": 10,
-    "MonitoredCount": 1,
-    "Status": "Running",
-    "StartTime": "2025-03-18T18:12:59.3593687+00:00",
-    "PID": 2376
+    "Status": "Stopped"
   },
   "monitor_ips": {
-    "Status": "Stopped"
+    "StartTime": "2025-03-19T13:14:11.6967409+00:00",
+    "Status": "Running",
+    "PID": 49048,
+    "MonitoredCount": 4,
+    "Interval": 10
   },
   "alerts": {
     "Status": "Stopped"

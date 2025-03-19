@@ -6,5 +6,13 @@
     "testuser1": {
         "username": "testuser1",
         "password_hash": "$2b$12$D5c9wf7qkcUPl/qCX/o/EuYvlb/yiXAPnVujrIHkS6g0vXXit4zEq"
+    },
+    "testuser2": {
+        "username": "testuser2",
+        "password_hash": "$2b$12$RuSq9K8BxAZvR9Oa1OoDpemakf2Ku6hpUX72u9Q6Ne/fMS9VnaKjO"
+    },
+    "newuser": {
+        "username": "newuser",
+        "password_hash": "$2b$12$By5gTaIASUHN/8lJ5C0bXuBmq3zE5b9mCD95FFlnEElDoUdQjavnm"
     }
 }

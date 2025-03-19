@@ -1,22 +1,58 @@
 {
-  "ips": [],
-  "folders": [],
-  "files": [
+  "ips": [
     {
-      "Message": "File changed! C:\\Users\\tapso\\OneDrive\\Documents\\resuktat.txt || By: SUNNOGO_CALEB\\tapso",
-      "Timestamp": "2025-03-18T15:35:22.68428+00:00"
+      "Timestamp": "2025-03-19T14:20:56.422757+00:00",
+      "Message": "Connection to 8.8.8.8 lost!"
     },
     {
-      "Message": "File changed! C:\\Users\\tapso\\OneDrive\\Documents\\resuktat.txt || By: SUNNOGO_CALEB\\tapso",
-      "Timestamp": "2025-03-18T15:38:36.2662843+00:00"
+      "Timestamp": "2025-03-19T14:25:13.5715654+00:00",
+      "Message": "Connection to 8.8.8.8 lost!"
     },
     {
-      "Message": "File changed! C:\\Users\\tapso\\OneDrive\\Documents\\resuktat.txt || By: SUNNOGO_CALEB\\tapso",
-      "Timestamp": "2025-03-18T15:38:45.6571962+00:00"
+      "Timestamp": "2025-03-19T14:44:11.391468+00:00",
+      "Message": "Connection to 8.8.8.8 lost!"
     },
     {
-      "Message": "File changed! C:\\Users\\tapso\\OneDrive\\Documents\\resuktat.txt || By: SUNNOGO_CALEB\\tapso",
-      "Timestamp": "2025-03-18T15:39:05.3232402+00:00"
+      "Timestamp": "2025-03-19T14:46:04.2384821+00:00",
+      "Message": "Connection to 8.8.8.8 lost!"
+    },
+    {
+      "Timestamp": "2025-03-19T14:47:56.9580533+00:00",
+      "Message": "Connection to 8.8.8.8 lost!"
+    },
+    {
+      "Timestamp": "2025-03-19T15:17:50.9190869+00:00",
+      "Message": "Connection to 8.8.8.8 lost!"
+    },
+    {
+      "Timestamp": "2025-03-19T15:39:16.2903195+00:00",
+      "Message": "Connection to 8.8.8.8 lost!"
+    },
+    {
+      "Timestamp": "2025-03-19T15:43:01.6464627+00:00",
+      "Message": "Connection to 8.8.8.8 lost!"
+    },
+    {
+      "Timestamp": "2025-03-19T15:51:42.6135894+00:00",
+      "Message": "Connection to 8.8.8.8 lost!"
+    },
+    {
+      "Timestamp": "2025-03-19T16:00:43.8412382+00:00",
+      "Message": "Connection to 8.8.8.8 lost!"
+    },
+    {
+      "Timestamp": "2025-03-19T16:03:27.7968803+00:00",
+      "Message": "Connection to 8.8.8.8 lost!"
+    },
+    {
+      "Timestamp": "2025-03-19T16:04:08.8395948+00:00",
+      "Message": "Connection to 8.8.8.8 lost!"
+    },
+    {
+      "Timestamp": "2025-03-19T16:05:10.5201756+00:00",
+      "Message": "Connection to 8.8.8.8 lost!"
     }
-  ]
+  ],
+  "folders": [],
+  "files": []
 }

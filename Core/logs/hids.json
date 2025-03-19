@@ -1999,5 +1999,205 @@
     "timestamp": "2025-03-18 18:13:00",
     "event": "",
     "category": "Added folder: C:\\Users\\tapso\\OneDrive\\Documents\\Presentation (Hash: 2BCC9858E24C884E16C337265051C27158F4E826DD42CBECD3C0957F1B9D7857) | PID: 2376 | Start Time: 03/18/2025 18:12:59"
+  },
+  {
+    "timestamp": "2025-03-19 13:14:12",
+    "category": "Connection to 20.198.162.76 : 443 (svchost) established! | PID: 49048 | Start Time: 03/19/2025 13:14:11",
+    "event": ""
+  },
+  {
+    "timestamp": "2025-03-19 13:14:12",
+    "category": "Connection to 127.0.0.1 : 50261 (expressvpnd) established! | PID: 49048 | Start Time: 03/19/2025 13:14:11",
+    "event": ""
+  },
+  {
+    "category": "Added file: C:\\Users\\tapso\\OneDrive\\Documents\\resuktat.txt (Hash: AA1A565252253E52ACCCE62CDF3AA8A4205A4BDC0A60C5739E7C5EEFDFF80438) | PID: 48632 | Start Time: 03/19/2025 13:23:12",
+    "timestamp": "2025-03-19 13:23:12",
+    "event": ""
+  },
+  {
+    "category": "Added file: C:\\Users\\tapso\\OneDrive\\Documents\\Nouveau Document texte.txt (Hash: E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855) | PID: 48632 | Start Time: 03/19/2025 13:23:12",
+    "timestamp": "2025-03-19 13:23:12",
+    "event": ""
+  },
+  {
+    "category": "Files",
+    "timestamp": "2025-03-19 13:43:04",
+    "event": "File changed! C:\\Users\\tapso\\OneDrive\\Documents\\resuktat.txt | User: SUNNOGO_CALEB\\tapso | Detected at: 2025-03-19 13:43:04 | Modified at: 03/19/2025 13:42:57 | Old Hash: AA1A565252253E52ACCCE62CDF3AA8A4205A4BDC0A60C5739E7C5EEFDFF80438 | New Hash: 501E3E294877DBE35BCE6437F73F57ADF977BCA199850B9650E45D55A65EEF1F | PID: 48632 | Start Time: 03/19/2025 13:23:12"
+  },
+  {
+    "category": "Added file: C:\\Users\\tapso\\OneDrive\\Documents\\resuktat.txt (Hash: 501E3E294877DBE35BCE6437F73F57ADF977BCA199850B9650E45D55A65EEF1F) | PID: 48632 | Start Time: 03/19/2025 13:58:47",
+    "timestamp": "2025-03-19 13:58:47",
+    "event": ""
+  },
+  {
+    "category": "Added file: C:\\Users\\tapso\\OneDrive\\Documents\\Nouveau Document texte.txt (Hash: E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855) | PID: 48632 | Start Time: 03/19/2025 13:58:47",
+    "timestamp": "2025-03-19 13:58:47",
+    "event": ""
+  },
+  {
+    "category": "Files",
+    "timestamp": "2025-03-19 14:00:07",
+    "event": "File changed! C:\\Users\\tapso\\OneDrive\\Documents\\resuktat.txt | User: SUNNOGO_CALEB\\tapso | Detected at: 2025-03-19 14:00:07 | Modified at: 03/19/2025 14:00:06 | Old Hash: 501E3E294877DBE35BCE6437F73F57ADF977BCA199850B9650E45D55A65EEF1F | New Hash: ED11F72D0BE328EF4AE5FC2FA7644643A8E8E0D12C27EAAC867645A0788A3523 | PID: 48632 | Start Time: 03/19/2025 13:58:47"
+  },
+  {
+    "timestamp": "2025-03-19 14:02:38",
+    "category": "Connection to 8.8.8.8 : 443 (msedge) established! | PID: 49048 | Start Time: 03/19/2025 13:14:11",
+    "event": ""
+  },
+  {
+    "timestamp": "2025-03-19 14:02:49",
+    "category": "Connection to 8.8.8.8 lost! | PID: 49048 | Start Time: 03/19/2025 13:14:11",
+    "event": ""
+  },
+  {
+    "timestamp": "2025-03-19 14:20:15",
+    "category": "Connection to 8.8.8.8 : 443 (Spotify) established! | PID: 49048 | Start Time: 03/19/2025 13:14:11",
+    "event": ""
+  },
+  {
+    "timestamp": "2025-03-19 14:20:56",
+    "category": "Connection to 8.8.8.8 lost! | PID: 49048 | Start Time: 03/19/2025 13:14:11",
+    "event": ""
+  },
+  {
+    "timestamp": "2025-03-19 14:25:03",
+    "category": "Connection to 8.8.8.8 : 443 (chrome) established! | PID: 49048 | Start Time: 03/19/2025 13:14:11",
+    "event": ""
+  },
+  {
+    "timestamp": "2025-03-19 14:25:13",
+    "category": "Connection to 8.8.8.8 lost! | PID: 49048 | Start Time: 03/19/2025 13:14:11",
+    "event": ""
+  },
+  {
+    "timestamp": "2025-03-19 14:44:01",
+    "category": "Connection to 8.8.8.8 : 443 (msedgewebview2) established! | PID: 49048 | Start Time: 03/19/2025 13:14:11",
+    "event": ""
+  },
+  {
+    "timestamp": "2025-03-19 14:44:11",
+    "category": "Connection to 8.8.8.8 lost! | PID: 49048 | Start Time: 03/19/2025 13:14:11",
+    "event": ""
+  },
+  {
+    "timestamp": "2025-03-19 14:45:33",
+    "category": "Connection to 8.8.8.8 : 443 (Spotify) established! | PID: 49048 | Start Time: 03/19/2025 13:14:11",
+    "event": ""
+  },
+  {
+    "timestamp": "2025-03-19 14:46:04",
+    "category": "Connection to 8.8.8.8 lost! | PID: 49048 | Start Time: 03/19/2025 13:14:11",
+    "event": ""
+  },
+  {
+    "timestamp": "2025-03-19 14:46:24",
+    "category": "Connection to 8.8.8.8 : 443 (msedge) established! | PID: 49048 | Start Time: 03/19/2025 13:14:11",
+    "event": ""
+  },
+  {
+    "timestamp": "2025-03-19 14:47:56",
+    "category": "Connection to 8.8.8.8 lost! | PID: 49048 | Start Time: 03/19/2025 13:14:11",
+    "event": ""
+  },
+  {
+    "timestamp": "2025-03-19 15:17:39",
+    "category": "Connection to 8.8.8.8 : 443 (msedge) established! | PID: 49048 | Start Time: 03/19/2025 13:14:11",
+    "event": ""
+  },
+  {
+    "timestamp": "2025-03-19 15:17:40",
+    "category": "ALERT: Connection to 20.198.162.76 changed! New Port: 443 (OneDrive) | PID: 49048 | Start Time: 03/19/2025 13:14:11",
+    "event": ""
+  },
+  {
+    "timestamp": "2025-03-19 15:17:50",
+    "category": "Connection to 8.8.8.8 lost! | PID: 49048 | Start Time: 03/19/2025 13:14:11",
+    "event": ""
+  },
+  {
+    "timestamp": "2025-03-19 15:17:50",
+    "category": "ALERT: Connection to 127.0.0.1 changed! New Port: 57669 (Code) | PID: 49048 | Start Time: 03/19/2025 13:14:11",
+    "event": ""
+  },
+  {
+    "timestamp": "2025-03-19 15:18:01",
+    "category": "ALERT: Connection to 127.0.0.1 changed! New Port: 50261 (expressvpnd) | PID: 49048 | Start Time: 03/19/2025 13:14:11",
+    "event": ""
+  },
+  {
+    "timestamp": "2025-03-19 15:38:14",
+    "category": "Connection to 8.8.8.8 : 443 (msedgewebview2) established! | PID: 49048 | Start Time: 03/19/2025 13:14:11",
+    "event": ""
+  },
+  {
+    "timestamp": "2025-03-19 15:39:16",
+    "category": "Connection to 8.8.8.8 lost! | PID: 49048 | Start Time: 03/19/2025 13:14:11",
+    "event": ""
+  },
+  {
+    "timestamp": "2025-03-19 15:41:08",
+    "category": "Connection to 8.8.8.8 : 443 (msedge) established! | PID: 49048 | Start Time: 03/19/2025 13:14:11",
+    "event": ""
+  },
+  {
+    "timestamp": "2025-03-19 15:42:10",
+    "category": "ALERT: Connection to 8.8.8.8 changed! New Port: 443 (chrome) | PID: 49048 | Start Time: 03/19/2025 13:14:11",
+    "event": ""
+  },
+  {
+    "timestamp": "2025-03-19 15:43:01",
+    "category": "Connection to 8.8.8.8 lost! | PID: 49048 | Start Time: 03/19/2025 13:14:11",
+    "event": ""
+  },
+  {
+    "timestamp": "2025-03-19 15:51:32",
+    "category": "Connection to 8.8.8.8 : 443 (msedge) established! | PID: 49048 | Start Time: 03/19/2025 13:14:11",
+    "event": ""
+  },
+  {
+    "timestamp": "2025-03-19 15:51:42",
+    "category": "Connection to 8.8.8.8 lost! | PID: 49048 | Start Time: 03/19/2025 13:14:11",
+    "event": ""
+  },
+  {
+    "timestamp": "2025-03-19 16:00:02",
+    "category": "Connection to 8.8.8.8 : 443 (chrome) established! | PID: 49048 | Start Time: 03/19/2025 13:14:11",
+    "event": ""
+  },
+  {
+    "timestamp": "2025-03-19 16:00:43",
+    "category": "Connection to 8.8.8.8 lost! | PID: 49048 | Start Time: 03/19/2025 13:14:11",
+    "event": ""
+  },
+  {
+    "timestamp": "2025-03-19 16:03:17",
+    "category": "Connection to 8.8.8.8 : 443 (msedge) established! | PID: 49048 | Start Time: 03/19/2025 13:14:11",
+    "event": ""
+  },
+  {
+    "timestamp": "2025-03-19 16:03:27",
+    "category": "Connection to 8.8.8.8 lost! | PID: 49048 | Start Time: 03/19/2025 13:14:11",
+    "event": ""
+  },
+  {
+    "timestamp": "2025-03-19 16:03:58",
+    "category": "Connection to 8.8.8.8 : 443 (msedgewebview2) established! | PID: 49048 | Start Time: 03/19/2025 13:14:11",
+    "event": ""
+  },
+  {
+    "timestamp": "2025-03-19 16:04:08",
+    "category": "Connection to 8.8.8.8 lost! | PID: 49048 | Start Time: 03/19/2025 13:14:11",
+    "event": ""
+  },
+  {
+    "timestamp": "2025-03-19 16:05:00",
+    "category": "Connection to 8.8.8.8 : 443 (msedge) established! | PID: 49048 | Start Time: 03/19/2025 13:14:11",
+    "event": ""
+  },
+  {
+    "timestamp": "2025-03-19 16:05:10",
+    "category": "Connection to 8.8.8.8 lost! | PID: 49048 | Start Time: 03/19/2025 13:14:11",
+    "event": ""
   }
 ]

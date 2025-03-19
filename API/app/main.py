@@ -10,3 +10,4 @@
 #     app.register_blueprint(auth_bp, url_prefix='/auth')
 #     app.register_blueprint(status_bp, url_prefix='/status')
 #     return app
+

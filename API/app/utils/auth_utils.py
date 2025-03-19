@@ -2,6 +2,7 @@
 
 import bcrypt
 import jwt
+import re
 
 def hash_password(password):
     return bcrypt.hashpw(password.encode("utf-8"), bcrypt.gensalt()).decode("utf-8")
@@ -19,3 +20,16 @@ def decode_token(token, secret_key):
         return None
     except Exception as e:
         return None
+
+def validate_password_complexity(password):
+    if len(password) < 8:
+        return False
+    if not re.search(r"[A-Z]", password):
+        return False
+    if not re.search(r"[a-z]", password):
+        return False
+    if not re.search(r"\d", password):
+        return False
+    if not re.search(r"[@$!%*?&]", password):  # Caractères spéciaux requis
+        return False
+    return True

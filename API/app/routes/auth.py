@@ -80,3 +80,20 @@ def logout():
         return jsonify({"message": "Logout successful"}), 200
     except Exception as e:
         return jsonify({"message": f"An error occurred: {str(e)}"}), 500
+
+@auth_bp.route("/change-password", methods=["POST"])
+@token_required
+def change_password():
+    data = request.get_json()
+    old_password = data.get("old_password")
+    new_password = data.get("new_password")
+
+    if not old_password or not new_password:
+        return jsonify({"message": "Old and new password are required"}), 400
+
+    success, message = auth_service.change_password(request.username, old_password, new_password)
+
+    if success:
+        return jsonify({"message": "Password changed successfully. Please log in again."}), 200
+    else:
+        return jsonify({"message": message}), 400
