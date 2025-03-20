@@ -17,10 +17,11 @@
         "smtpServer": "smtp.office365.com",
         "smtpPort": 587,
         "recipients": [
-            "tapsobascaleb@icloud.com",
             "sunnoogo-caleb.tapsoba@efrei.net",
-            "tapsobascaleb@icloud.com"
+            "tapsobascaleb@icloud.com",
+            "sunnoogo@gmail.com",
+            "tapsobascaleb@iclou1d.com"
         ],
-        "interval": 3600
+        "interval": 3660
     }
 }

@@ -25,7 +25,7 @@ def create_app(config_name="development"):
     from app.routes.emails import emails_bp
     from app.routes.monitor import monitor_bp
     from app.routes.status import status_bp
-    # from app.routes.config import config_bp
+    from app.routes.config import config_bp
     from app.routes.auth import auth_bp
     
     
@@ -37,7 +37,7 @@ def create_app(config_name="development"):
     app.register_blueprint(emails_bp, url_prefix="/api/emails")
     app.register_blueprint(monitor_bp, url_prefix="/api/monitor")
     app.register_blueprint(status_bp, url_prefix="/api/status") 
-    # app.register_blueprint(config_bp, url_prefix="/api/config")
+    app.register_blueprint(config_bp, url_prefix="/api/config")
     app.register_blueprint(auth_bp, url_prefix="/auth")
     
     @app.after_request

@@ -218,6 +218,7 @@ function Monitor-Ips {
                 StartTime = $startTime
                 Status = "Running"
                 MonitoredCount = $monitoredIps.Count
+                MonitoredIPs = $monitoredIps
                 Interval = $interval
             }
             $allStatuses | ConvertTo-Json | Set-Content $statusFile
@@ -243,6 +244,7 @@ try {
         StartTime = $startTime
         Status = "Running"
         MonitoredCount = $monitoredIps.Count
+        MonitoredIPs = $monitoredIps
         Interval = $interval
         LastUpdate = (Get-Date).ToString("o")
     }

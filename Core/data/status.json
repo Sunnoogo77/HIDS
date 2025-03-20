@@ -9,6 +9,16 @@
     "Status": "Stopped"
   },
   "alerts": {
-    "Status": "Stopped"
+    "LastUpdate": "2025-03-20T13:47:20.1036898+00:00",
+    "Status": "Running",
+    "Interval": 3600,
+    "Emails": [
+      "tapsobascaleb@icloud.com",
+      "sunnoogo-caleb.tapsoba@efrei.net",
+      "tapsobascaleb@icloud.com"
+    ],
+    "PID": 56644,
+    "StartTime": "2025-03-20T12:47:06.8055417+00:00",
+    "EmailCounter": 2
   }
 }

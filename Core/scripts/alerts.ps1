@@ -338,7 +338,7 @@ function Send-BatchedEmailAlerts {
     }
 
     $alerts = Get-Content $alertsFile | ConvertFrom-Json
-    if ($alerts -eq $null -or ($alerts.files.Count + $alerts.folders.Count + $alerts.ips.Count) -eq 0) {
+    if ($null -eq $alerts -or ($alerts.files.Count + $alerts.folders.Count + $alerts.ips.Count) -eq 0) {
         return
     }
 
@@ -432,6 +432,7 @@ function Send-BatchedEmailAlerts {
         Status = "Running"
         Interval = $Interval
         EmailCounter = $emailCounter
+        Emails = @($emailRecipients)
         LastUpdate = (Get-Date).ToString("o")
     }
     $allStatuses | ConvertTo-Json | Set-Content $statusFile
@@ -453,6 +454,7 @@ try{
         Status = "Running"
         Interval = $Interval
         EmailCounter = $emailCounter
+        Emails = @($emailRecipients)
     }
     $allStatuses | ConvertTo-Json | Set-Content $statusFile
 
