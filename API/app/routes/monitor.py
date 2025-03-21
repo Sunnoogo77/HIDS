@@ -105,59 +105,80 @@
 
 
 #--------------------------------------
-
-# API/app/routes/monitor.py
-
-from flask import Blueprint, request, jsonify
-from app.services.monitor_service import MonitorService
+import os
+import subprocess
+import signal
+import json
+from flask import Blueprint, jsonify, request
 from app.utils.auth_decorators import token_required
+from configs.settings import Config
 
 monitor_bp = Blueprint('monitor', __name__, url_prefix='/monitor')
-monitor_service = MonitorService()
 
-@monitor_bp.route('/start', methods=['POST'])
-@token_required
-async def start_monitor():
-    """Starts the specified types of monitoring asynchronously."""
-    data = request.get_json()
-    monitor_types = data.get('monitor_types')
-    if not monitor_types or not isinstance(monitor_types, list):
-        return jsonify({'error': 'Monitor types list is required'}), 400
-    try:
-        results = await monitor_service.start_monitoring(monitor_types)
-        return jsonify({"message": "Monitoring started", "results": results}), 200
-    except Exception as e:
-        return jsonify({"error": str(e)}), 500
+STATUS_FILE = os.path.join(Config.BASE_DIR, "Core", "data", "status.json")
+SCRIPTS_DIR = os.path.join(Config.BASE_DIR, "Core", "scripts")
 
-@monitor_bp.route('/stop/<monitor_type>', methods=['POST'])
-@token_required
-async def stop_monitor(monitor_type):
-    """Stops a type of monitoring."""
-    try:
-        message, code = await monitor_service.stop_monitoring(monitor_type)
-        return jsonify(message), code
-    except ValueError as e:
-        return jsonify({'error': str(e)}), 400
-    except Exception as e:
-        return jsonify({"error": str(e)}), 500
+# Liste des scripts disponibles
+SCRIPTS = {
+    "monitor_files": "monitor_files.ps1",
+    "monitor_folders": "monitor_folders.ps1",
+    "monitor_ips": "monitor_ips.ps1",
+    "alerts": "alerts.ps1",
+    "send_alert_now": "send_alert_now.ps1"
+}
 
-@monitor_bp.route('/stop/all', methods=['POST'])
-@token_required
-async def stop_all_monitor():
-    """Stops all monitoring scripts."""
+def read_status():
+    """Lit le fichier status.json et retourne son contenu"""
     try:
-        results = await monitor_service.stop_all_monitoring()
-        return jsonify({"message": "All monitoring stopped", "results": results}), 200
-    except Exception as e:
-        return jsonify({"error": str(e)}), 500
+        with open(STATUS_FILE, "r") as f:
+            return json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError):
+        return {}
 
-#start all
-@monitor_bp.route('/start/all', methods=['POST'])
+def is_running(script_key):
+    """Vérifie si un script est en cours d'exécution en consultant status.json"""
+    status = read_status()
+    return status.get(script_key, {}).get("Status") == "Running"
+
+def get_pid(script_key):
+    """Récupère le PID d’un script s’il est en cours d’exécution"""
+    status = read_status()
+    return status.get(script_key, {}).get("PID")
+
+@monitor_bp.route('/start/<script_key>', methods=['POST'])
 @token_required
-async def start_all_monitor():
-    """Starts all monitoring scripts."""
+def start_script(script_key):
+    """Démarrer un script PowerShell"""
+    if script_key not in SCRIPTS:
+        return jsonify({'error': 'Invalid script name'}), 400
+
+    if is_running(script_key):
+        return jsonify({'error': f'{script_key} is already running'}), 400
+
+    script_path = os.path.join(SCRIPTS_DIR, SCRIPTS[script_key])
+
     try:
-        results = await monitor_service.start_all_monitoring()
-        return jsonify({"message": "All monitoring started", "results": results}), 200
+        process = subprocess.Popen(["powershell.exe", "-ExecutionPolicy", "Bypass", "-File", script_path],
+                                   stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        return jsonify({'message': f'{script_key} started successfully', 'PID': process.pid}), 200
+
     except Exception as e:
-        return jsonify({"error": str(e)}), 500
+        return jsonify({'error': str(e)}), 500
+
+@monitor_bp.route('/stop/<script_key>', methods=['POST'])
+@token_required
+def stop_script(script_key):
+    """Arrêter un script en fonction de son PID"""
+    if not is_running(script_key):
+        return jsonify({'error': f'{script_key} is not running'}), 400
+
+    pid = get_pid(script_key)
+    if not pid:
+        return jsonify({'error': 'Could not retrieve process ID'}), 500
+
+    try:
+        os.kill(pid, signal.SIGTERM)  # Tuer le process
+        return jsonify({'message': f'{script_key} stopped successfully'}), 200
+
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
