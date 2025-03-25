@@ -18,11 +18,6 @@ if (!(Test-Path $configFile)) {
 
 $config = Get-Content $configFile | ConvertFrom-Json
 
-# Email settings
-# $smtpServer = $config.email.smtpServer
-# $smtpPort = $config.email.smtpPort
-# $emailSender = $config.email.sender
-# $emailRecipients = $config.email.recipients
 
 $smtpServer = "smtp.office365.com"
 $smtpPort = 587

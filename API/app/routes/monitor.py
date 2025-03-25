@@ -145,10 +145,29 @@ def get_pid(script_key):
     status = read_status()
     return status.get(script_key, {}).get("PID")
 
+# @monitor_bp.route('/start/<script_key>', methods=['POST'])
+# @token_required
+# def start_script(script_key):
+#     """Démarrer un script PowerShell"""
+#     if script_key not in SCRIPTS:
+#         return jsonify({'error': 'Invalid script name'}), 400
+
+#     if is_running(script_key):
+#         return jsonify({'error': f'{script_key} is already running'}), 400
+
+#     script_path = os.path.join(SCRIPTS_DIR, SCRIPTS[script_key])
+
+#     try:
+#         process = subprocess.Popen(["powershell.exe", "-ExecutionPolicy", "Bypass", "-File", script_path],
+#                                     stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+#         return jsonify({'message': f'{script_key} started successfully', 'PID': process.pid}), 200
+
+#     except Exception as e:
+#         return jsonify({'error': str(e)}), 500
+
 @monitor_bp.route('/start/<script_key>', methods=['POST'])
 @token_required
 def start_script(script_key):
-    """Démarrer un script PowerShell"""
     if script_key not in SCRIPTS:
         return jsonify({'error': 'Invalid script name'}), 400
 
@@ -156,15 +175,21 @@ def start_script(script_key):
         return jsonify({'error': f'{script_key} is already running'}), 400
 
     script_path = os.path.join(SCRIPTS_DIR, SCRIPTS[script_key])
+    
+    # Définir le répertoire de travail comme le dossier des scripts PowerShell
+    working_dir = os.path.join(Config.BASE_DIR, "Core", "scripts")
 
     try:
-        process = subprocess.Popen(["powershell.exe", "-ExecutionPolicy", "Bypass", "-File", script_path],
-                                   stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-        return jsonify({'message': f'{script_key} started successfully', 'PID': process.pid}), 200
-
+        process = subprocess.Popen(
+            ["powershell.exe", "-ExecutionPolicy", "Bypass", "-File", script_path],
+            stdout=subprocess.PIPE, 
+            stderr=subprocess.PIPE,
+            cwd=working_dir  # <-- Clé : exécuter depuis le bon dossier
+        )
+        return jsonify({'message': f'{script_key} started', 'PID': process.pid}), 200
     except Exception as e:
         return jsonify({'error': str(e)}), 500
-
+    
 @monitor_bp.route('/stop/<script_key>', methods=['POST'])
 @token_required
 def stop_script(script_key):

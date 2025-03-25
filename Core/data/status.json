@@ -9,6 +9,13 @@
     "Status": "Stopped"
   },
   "alerts": {
-    "Status": "Stopped"
+    "Interval": 15,
+    "Emails": [
+      "sunnoogo-caleb.tapsoba@efrei.net"
+    ],
+    "Status": "Running",
+    "StartTime": "2025-03-25T11:24:18.9417301+00:00",
+    "EmailCounter": 0,
+    "PID": 47228
   }
 }
