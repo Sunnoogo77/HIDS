@@ -41,7 +41,7 @@ $processId = $PID # Get current process ID
 $startTime = Get-Date # Get start time
 $emailCounter = 0
 
-### 🛠 **1. Vérifier l'intégrité de `alerts.json`**
+# 1. Vérifier l'intégrité de alerts.json
 function Validate-AlertsJson {
     param (
         [string]$FilePath
@@ -70,7 +70,7 @@ function Validate-AlertsJson {
     }
 }
 
-### 🛠 **2. Réinitialiser `alerts.json` si corrompu**
+# 2. Réinitialiser alerts.json si corrompu
 function Reset-AlertsFile {
     param (
         [string]$FilePath
@@ -85,7 +85,7 @@ function Reset-AlertsFile {
     Write-Host "alerts.json has been reset." -ForegroundColor Yellow
 }
 
-### 🛠 **3. Limiter la taille de `alerts.json`**
+# 3.Limiter la taille de alerts.json
 function Trim-AlertsFile {
     param (
         [string]$FilePath,
@@ -110,7 +110,7 @@ function Trim-AlertsFile {
     $alerts | ConvertTo-Json -Depth 10 | Set-Content -Path $FilePath
 }
 
-### 🛠 **4. Fonction pour envoyer les alertes par e-mail**
+#4.Fonction pour envoyer les alertes par e-mail
 function Send-BatchedEmailAlerts {
     $global:emailCounter += 1
     
@@ -260,15 +260,3 @@ try{
         $allStatuses | ConvertTo-Json | Set-Content $statusFile
     }
 }
-
-
-# ### **6. Boucle principale**
-# while ($true) {
-#     try {
-#         Send-BatchedEmailAlerts
-#         Start-Sleep -Seconds $Interval
-#     } catch {
-#         Write-Host "Error in main loop: $_" -ForegroundColor Red
-#         Start-Sleep -Seconds 60
-#     }
-# }

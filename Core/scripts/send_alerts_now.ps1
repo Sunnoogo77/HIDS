@@ -18,11 +18,7 @@ if (!(Test-Path $configFile)) {
 
 $config = Get-Content $configFile | ConvertFrom-Json
 
-# Email settings
-# $smtpServer = $config.email.smtpServer
-# $smtpPort = $config.email.smtpPort
-# $emailSender = $config.email.sender
-# $emailRecipients = $config.email.recipients
+
 
 $smtpServer = "smtp.office365.com"
 $smtpPort = 587
@@ -35,9 +31,6 @@ if (!(Test-Path $credentialFile)) {
     exit
 }
 
-# $credential = Import-Clixml -Path $credentialFile
-# $smtpUser = $credential.UserName
-# $smtpPassword = $credential.GetNetworkCredential().Password
 
 $credential = Import-Clixml -Path $credentialFile
 $smtpUser = $credential.UserName
@@ -54,7 +47,7 @@ if (!(Test-Path $alertsFile)) {
 $alerts = Get-Content $alertsFile | ConvertFrom-Json
 
 # Vérifier s'il y a des alertes
-if ($alerts -eq $null -or ($alerts.files.Count + $alerts.folders.Count + $alerts.ips.Count) -eq 0) {
+if ($null -eq $alerts -or ($alerts.files.Count + $alerts.folders.Count + $alerts.ips.Count) -eq 0) {
     Write-Host "No new alerts to send." -ForegroundColor Yellow
     exit
 }
