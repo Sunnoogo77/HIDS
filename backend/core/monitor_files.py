@@ -1,3 +1,8 @@
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
+
 # core/monitor_files.py
 import os
 import time
@@ -5,7 +10,6 @@ import hashlib
 from datetime import datetime
 from threading import Thread
 from utils.json_handler import read_json, write_json
-# from utils.json_handler import read_json, write_json, init_json_if_missing
 from utils.logger import log_event
 
 CONFIG_FILE = os.path.join("data", "config.json")
@@ -66,10 +70,21 @@ class FileMonitor(Thread):
         log_event("Files", f"{alert_msg} | Old Hash: {old_hash} | New Hash: {new_hash}")
 
     def run(self):
+        status = read_json(STATUS_FILE) or {}
+        current = status.get("monitor_files", {})
+        if current.get("Status") == "Running":
+            log_event("Files", "Attempt to start monitor_files but it's already running.")
+            return
+
         self.running = True
+        self.update_status()  # Write status right away (second safety)
+
         if not self.load_config():
             log_event("Files", "No files to monitor or invalid config.json")
+            self.running = False
+            self.update_status()
             return
+
         while self.running:
             for filepath in list(self.monitored_files.keys()):
                 if os.path.exists(filepath):
@@ -79,9 +94,10 @@ class FileMonitor(Thread):
                         self.monitored_files[filepath] = current_hash
                 else:
                     log_event("Files", f"WARNING: File Missing - {filepath}")
-                    del self.monitored_files[filepath]
+                    self.monitored_files.pop(filepath, None)
             self.update_status()
             time.sleep(self.interval)
+
         self.update_status()
 
     def stop(self):
