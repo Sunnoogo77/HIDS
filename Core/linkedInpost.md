@@ -233,3 +233,55 @@ Parce que **la sécurité n’est pas une option. C’est une responsabilité.**
 ---
 
 Souhaite-tu que je t’aide à créer une **version courte** avec des visuels pour maximiser l'engagement ?
+
+---
+
+## **Post LinkedIn – Focus sur l'impact technique de HIDS**
+
+> **"Et si vous pouviez détecter une intrusion avant même qu'elle ne devienne une menace visible ?"**
+
+### **1. La sécurité proactive, au cœur de HIDS**
+
+Dans un monde où les cyberattaques deviennent de plus en plus sophistiquées, il ne suffit plus de réagir.  
+Il faut **anticiper**.  
+
+C’est exactement ce que fait **HIDS** :  
+- Il surveille **l’intégrité de vos fichiers critiques**,  
+- Il détecte **les changements subtils dans vos dossiers sensibles**,  
+- Et il vous alerte **en temps réel**.
+
+---
+
+### **2. Pourquoi HIDS est différent**
+
+Contrairement aux solutions complexes et coûteuses, HIDS est :  
+- **Léger** : Pas besoin d’installer un agent lourd.  
+- **Local** : Vos données restent sur votre machine.  
+- **Open-source** : Vous pouvez l’adapter à vos besoins.  
+
+Et surtout, il est **simple à configurer** grâce à PowerShell et JSON.
+
+---
+
+### **3. Un outil pensé pour les ingénieurs et les passionnés de sécurité**
+
+HIDS n’est pas juste un outil.  
+C’est une **philosophie** :  
+- **Apprendre** à détecter les signaux faibles,  
+- **Comprendre** les tactiques des attaquants,  
+- Et **agir** avant qu’il ne soit trop tard.
+
+---
+
+### **4. Envie de tester HIDS ?**
+
+Le projet est disponible en open-source.  
+Il est documenté et prêt à être utilisé.  
+
+👉 **Rejoignez-nous pour améliorer la sécurité, un fichier à la fois.**
+
+> _Parce que dans la cybersécurité, chaque détail compte._
+
+---
+
+**#Cybersecurity #HIDS #PowerShell #JSON #OpenSource #Monitoring #Detection #BlueTeam**
