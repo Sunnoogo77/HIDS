@@ -1,14 +1,25 @@
 {
-  "monitor_files": {
-    "Status": "Stopped"
-  },
-  "monitor_folders": {
-    "Status": "Stopped"
-  },
-  "monitor_ips": {
-    "Status": "Stopped"
-  },
-  "alerts": {
-    "Status": "Stopped"
-  }
+    "monitor_files":  {
+                          "Status":  "Stopped"
+                      },
+    "monitor_folders":  {
+                            "Status":  "Stopped"
+                        },
+    "monitor_ips":  {
+                        "Status":  "Stopped"
+                    },
+    "alerts":  {
+                   "Emails":  [
+                                  "sunnoogo-caleb.tapsoba@efrei.net",
+                                  "tapsobascaleb@icloud.com",
+                                  "sunnoogo@gmail.com",
+                                  "tapsobascaleb@iclou1d.com"
+                              ],
+                   "Interval":  3660,
+                   "PID":  18640,
+                   "EmailCounter":  1,
+                   "LastUpdate":  "2025-04-12T17:49:44.1036640+02:00",
+                   "StartTime":  "\/Date(1744472983989)\/",
+                   "Status":  "Running"
+               }
 }

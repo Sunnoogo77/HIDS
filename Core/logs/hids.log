@@ -529,3 +529,408 @@ Check the spelling of the name, or if a path was included, verify that the path 
 [2025-03-19 16:04:08] [Connection to 8.8.8.8 lost! | PID: 49048 | Start Time: 03/19/2025 13:14:11] 
 [2025-03-19 16:05:00] [Connection to 8.8.8.8 : 443 (msedge) established! | PID: 49048 | Start Time: 03/19/2025 13:14:11] 
 [2025-03-19 16:05:10] [Connection to 8.8.8.8 lost! | PID: 49048 | Start Time: 03/19/2025 13:14:11] 
+[2025-03-19 16:38:00] [Connection to 8.8.8.8 : 443 (chrome) established! | PID: 49048 | Start Time: 03/19/2025 13:14:11] 
+[2025-03-19 16:38:10] [Connection to 8.8.8.8 lost! | PID: 49048 | Start Time: 03/19/2025 13:14:11] 
+[2025-03-19 16:43:16] [Connection to 8.8.8.8 : 443 (msedge) established! | PID: 49048 | Start Time: 03/19/2025 13:14:11] 
+[2025-03-19 16:43:26] [Connection to 8.8.8.8 lost! | PID: 49048 | Start Time: 03/19/2025 13:14:11] 
+[2025-03-19 16:43:57] [Connection to 8.8.8.8 : 443 (msedgewebview2) established! | PID: 49048 | Start Time: 03/19/2025 13:14:11] 
+[2025-03-19 16:44:08] [Connection to 8.8.8.8 lost! | PID: 49048 | Start Time: 03/19/2025 13:14:11] 
+[2025-03-19 16:44:38] [Connection to 8.8.8.8 : 443 (Spotify) established! | PID: 49048 | Start Time: 03/19/2025 13:14:11] 
+[2025-03-19 16:44:49] [Connection to 8.8.8.8 lost! | PID: 49048 | Start Time: 03/19/2025 13:14:11] 
+[2025-03-19 16:57:24] [Connection to 8.8.8.8 : 443 (msedge) established! | PID: 49048 | Start Time: 03/19/2025 13:14:11] 
+[2025-03-19 16:57:34] [Connection to 8.8.8.8 lost! | PID: 49048 | Start Time: 03/19/2025 13:14:11] 
+[2025-03-19 16:57:55] [Connection to 8.8.8.8 : 443 (Spotify) established! | PID: 49048 | Start Time: 03/19/2025 13:14:11] 
+[2025-03-19 16:58:05] [Connection to 8.8.8.8 lost! | PID: 49048 | Start Time: 03/19/2025 13:14:11] 
+[2025-03-19 17:00:38] [Connection to 8.8.8.8 : 443 (Spotify) established! | PID: 49048 | Start Time: 03/19/2025 13:14:11] 
+[2025-03-19 17:00:48] [Connection to 8.8.8.8 lost! | PID: 49048 | Start Time: 03/19/2025 13:14:11] 
+[2025-03-19 17:10:41] [Connection to 8.8.8.8 : 443 (Spotify) established! | PID: 49048 | Start Time: 03/19/2025 13:14:11] 
+[2025-03-19 17:14:15] [Connection to 8.8.8.8 lost! | PID: 49048 | Start Time: 03/19/2025 13:14:11] 
+[2025-03-19 18:25:46] [Added file: C:\Users\tapso\OneDrive\Documents\resuktat.txt (Hash: ED11F72D0BE328EF4AE5FC2FA7644643A8E8E0D12C27EAAC867645A0788A3523) | PID: 48632 | Start Time: 03/19/2025 18:25:46] 
+[2025-03-19 18:25:46] [Added file: C:\Users\tapso\OneDrive\Documents\Nouveau Document texte.txt (Hash: E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855) | PID: 48632 | Start Time: 03/19/2025 18:25:46] 
+[2025-03-19 18:25:46] [Added file: C:/Users/tapso/OneDrive/Documents/testAPI.txt (Hash: 22C22E3F89BBFBAF6874D30FA644EC716C376B45BCEEDB730F60A7F403404557) | PID: 48632 | Start Time: 03/19/2025 18:25:46] 
+[2025-03-19 18:25:46] [Added file: C:/Users/tapso/OneDrive/Documents/resuktat.txt (Hash: ED11F72D0BE328EF4AE5FC2FA7644643A8E8E0D12C27EAAC867645A0788A3523) | PID: 48632 | Start Time: 03/19/2025 18:25:46] 
+[2025-03-19 18:34:01] [Connection to 8.8.8.8 : 443 (msedgewebview2) established! | PID: 49048 | Start Time: 03/19/2025 13:14:11] 
+[2025-03-19 18:34:11] [Connection to 8.8.8.8 lost! | PID: 49048 | Start Time: 03/19/2025 13:14:11] 
+[2025-03-19 18:50:00] [Connection to 8.8.8.8 : 443 (Spotify) established! | PID: 49048 | Start Time: 03/19/2025 13:14:11] 
+[2025-03-19 18:50:31] [Connection to 8.8.8.8 lost! | PID: 49048 | Start Time: 03/19/2025 13:14:11] 
+[2025-03-19 19:17:31] [Added file: C:\Users\tapso\OneDrive\Documents\resuktat.txt (Hash: ED11F72D0BE328EF4AE5FC2FA7644643A8E8E0D12C27EAAC867645A0788A3523) | PID: 48632 | Start Time: 03/19/2025 19:17:31] 
+[2025-03-19 19:17:31] [Added file: C:\Users\tapso\OneDrive\Documents\Nouveau Document texte.txt (Hash: E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855) | PID: 48632 | Start Time: 03/19/2025 19:17:31] 
+[2025-03-19 19:17:31] [Added file: C:\Users\tapso\OneDrive\Documents\testAPI.txt (Hash: 22C22E3F89BBFBAF6874D30FA644EC716C376B45BCEEDB730F60A7F403404557) | PID: 48632 | Start Time: 03/19/2025 19:17:31] 
+[2025-03-19 19:26:50] [Added file: C:\Users\tapso\OneDrive\Documents\resuktat.txt (Hash: ED11F72D0BE328EF4AE5FC2FA7644643A8E8E0D12C27EAAC867645A0788A3523) | PID: 48632 | Start Time: 03/19/2025 19:26:50] 
+[2025-03-19 19:26:50] [Added file: C:\Users\tapso\OneDrive\Documents\Nouveau Document texte.txt (Hash: E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855) | PID: 48632 | Start Time: 03/19/2025 19:26:50] 
+[2025-03-19 19:35:01] [Error] The process cannot access the file 'C:\Users\tapso\OneDrive\Documents\GitHub\HIDS\Core\data\status.json' because it is being used by another process.
+[2025-03-19 19:44:03] [Added folder: C:\Users\tapso\OneDrive\Documents\Presentation (Hash: 2BCC9858E24C884E16C337265051C27158F4E826DD42CBECD3C0957F1B9D7857) | PID: 2376 | Start Time: 03/19/2025 19:44:02] 
+[2025-03-19 19:44:37] [Added file: C:\Users\tapso\OneDrive\Documents\resuktat.txt (Hash: ED11F72D0BE328EF4AE5FC2FA7644643A8E8E0D12C27EAAC867645A0788A3523) | PID: 48632 | Start Time: 03/19/2025 19:44:37] 
+[2025-03-19 19:44:37] [Added file: C:\Users\tapso\OneDrive\Documents\Nouveau Document texte.txt (Hash: E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855) | PID: 48632 | Start Time: 03/19/2025 19:44:37] 
+[2025-03-19 19:44:44] [Added folder: C:\Users\tapso\OneDrive\Documents\Presentation (Hash: 2BCC9858E24C884E16C337265051C27158F4E826DD42CBECD3C0957F1B9D7857) | PID: 2376 | Start Time: 03/19/2025 19:44:44] 
+[2025-03-19 19:44:59] [Added folder: C:\Users\tapso\OneDrive\Documents\Presentation (Hash: 2BCC9858E24C884E16C337265051C27158F4E826DD42CBECD3C0957F1B9D7857) | PID: 2376 | Start Time: 03/19/2025 19:44:59] 
+[2025-03-19 19:45:30] [Added folder: C:\Users\tapso\OneDrive\Documents\Presentation (Hash: 2BCC9858E24C884E16C337265051C27158F4E826DD42CBECD3C0957F1B9D7857) | PID: 2376 | Start Time: 03/19/2025 19:45:30] 
+[2025-03-19 19:46:20] [Folders] Folder changed! C:\Users\tapso\OneDrive\Documents\Presentation || By: SUNNOGO_CALEB\tapso || Removed files: C:\Users\tapso\OneDrive\Documents\Presentation\Nouveau Document texte.txt
+[2025-03-19 19:47:20] [Folders] Folder changed! C:\Users\tapso\OneDrive\Documents\Presentation || By: SUNNOGO_CALEB\tapso || Added files: C:\Users\tapso\OneDrive\Documents\Presentation\Nouveau Document texte.txt
+[2025-03-19 19:47:27] [Added folder: C:\Users\tapso\OneDrive\Documents\Presentation (Hash: 2BCC9858E24C884E16C337265051C27158F4E826DD42CBECD3C0957F1B9D7857) | PID: 2376 | Start Time: 03/19/2025 19:47:27] 
+[2025-03-19 19:49:09] [Added folder: C:\Users\tapso\OneDrive\Documents\Presentation (Hash: 2BCC9858E24C884E16C337265051C27158F4E826DD42CBECD3C0957F1B9D7857) | PID: 2376 | Start Time: 03/19/2025 19:49:09] 
+[2025-03-19 19:49:33] [Added folder: C:\Users\tapso\OneDrive\Documents\Presentation (Hash: 2BCC9858E24C884E16C337265051C27158F4E826DD42CBECD3C0957F1B9D7857) | PID: 2376 | Start Time: 03/19/2025 19:49:33] 
+[2025-03-19 19:51:03] [Folders] Folder changed! C:\Users\tapso\OneDrive\Documents\Presentation || By: SUNNOGO_CALEB\tapso || Removed files: C:\Users\tapso\OneDrive\Documents\Presentation\Nouveau Document texte.txt
+[2025-03-19 19:51:13] [Folders] Folder changed! C:\Users\tapso\OneDrive\Documents\Presentation || By: SUNNOGO_CALEB\tapso || Added files: C:\Users\tapso\OneDrive\Documents\Presentation\Nouveau Document texte.txt
+[2025-03-19 19:51:46] [Added folder: C:\Users\tapso\OneDrive\Documents\Presentation (Hash: 2BCC9858E24C884E16C337265051C27158F4E826DD42CBECD3C0957F1B9D7857) | PID: 2376 | Start Time: 03/19/2025 19:51:46] 
+[2025-03-19 19:52:49] [Added folder: C:\Users\tapso\OneDrive\Documents\Presentation (Hash: 2BCC9858E24C884E16C337265051C27158F4E826DD42CBECD3C0957F1B9D7857) | PID: 2376 | Start Time: 03/19/2025 19:52:49] 
+[2025-03-19 19:53:25] [Connection to 8.8.8.8 : 443 (msedgewebview2) established! | PID: 49048 | Start Time: 03/19/2025 13:14:11] 
+[2025-03-19 19:54:57] [Connection to 8.8.8.8 lost! | PID: 49048 | Start Time: 03/19/2025 13:14:11] 
+[2025-03-20 11:11:03] [Added folder: C:\Users\tapso\OneDrive\Documents\Presentation (Hash: 2BCC9858E24C884E16C337265051C27158F4E826DD42CBECD3C0957F1B9D7857) | PID: 2376 | Start Time: 03/20/2025 11:11:02] 
+[2025-03-20 11:20:20] [Added folder: C:\Users\tapso\OneDrive\Documents\Presentation (Hash: 2BCC9858E24C884E16C337265051C27158F4E826DD42CBECD3C0957F1B9D7857) | PID: 2376 | Start Time: 03/20/2025 11:20:19] 
+[2025-03-20 11:22:45] [Connection to 20.198.162.76 : 443 (OneDrive) established! | PID: 49048 | Start Time: 03/20/2025 11:22:44] 
+[2025-03-20 11:22:45] [Connection to 127.0.0.1 : 50261 (expressvpnd) established! | PID: 49048 | Start Time: 03/20/2025 11:22:44] 
+[2025-03-20 11:23:02] [Connection to 20.198.162.76 : 443 (OneDrive) established! | PID: 49048 | Start Time: 03/20/2025 11:23:02] 
+[2025-03-20 11:23:02] [Connection to 127.0.0.1 : 50261 (expressvpnd) established! | PID: 49048 | Start Time: 03/20/2025 11:23:02] 
+[2025-03-20 11:41:33] [ALERT: Connection to 127.0.0.1 changed! New Port: 50359 (git-remote-https) | PID: 49048 | Start Time: 03/20/2025 11:23:02] 
+[2025-03-20 11:41:43] [ALERT: Connection to 127.0.0.1 changed! New Port: 50261 (expressvpnd) | PID: 49048 | Start Time: 03/20/2025 11:23:02] 
+[2025-03-20 11:50:43] [Connection to 8.8.8.8 : 443 (Spotify) established! | PID: 49048 | Start Time: 03/20/2025 11:23:02] 
+[2025-03-20 11:50:53] [Connection to 8.8.8.8 lost! | PID: 49048 | Start Time: 03/20/2025 11:23:02] 
+[2025-03-20 12:00:54] [Connection to 8.8.8.8 : 443 (msedge) established! | PID: 49048 | Start Time: 03/20/2025 11:23:02] 
+[2025-03-20 12:01:04] [Connection to 8.8.8.8 lost! | PID: 49048 | Start Time: 03/20/2025 11:23:02] 
+[2025-03-20 12:06:31] [Connection to 8.8.8.8 : 443 (Spotify) established! | PID: 49048 | Start Time: 03/20/2025 11:23:02] 
+[2025-03-20 12:06:42] [Connection to 8.8.8.8 lost! | PID: 49048 | Start Time: 03/20/2025 11:23:02] 
+[2025-03-20 12:07:23] [Connection to 8.8.8.8 : 443 (chrome) established! | PID: 49048 | Start Time: 03/20/2025 11:23:02] 
+[2025-03-20 12:07:33] [Connection to 8.8.8.8 lost! | PID: 49048 | Start Time: 03/20/2025 11:23:02] 
+[2025-03-20 12:31:30] [Connection to 8.8.8.8 : 443 (Spotify) established! | PID: 49048 | Start Time: 03/20/2025 11:23:02] 
+[2025-03-20 12:31:51] [ALERT: Connection to 8.8.8.8 changed! New Port: 443 (chrome) | PID: 49048 | Start Time: 03/20/2025 11:23:02] 
+[2025-03-20 12:32:52] [ALERT: Connection to 8.8.8.8 changed! New Port: 443 (Spotify) | PID: 49048 | Start Time: 03/20/2025 11:23:02] 
+[2025-03-20 12:33:53] [Connection to 8.8.8.8 lost! | PID: 49048 | Start Time: 03/20/2025 11:23:02] 
+[2025-03-20 12:36:47] [Connection to 8.8.8.8 : 443 (msedge) established! | PID: 49048 | Start Time: 03/20/2025 11:23:02] 
+[2025-03-20 12:36:57] [Connection to 8.8.8.8 lost! | PID: 49048 | Start Time: 03/20/2025 11:23:02] 
+[2025-03-20 12:51:42] [Connection to 8.8.8.8 : 443 (chrome) established! | PID: 49048 | Start Time: 03/20/2025 11:23:02] 
+[2025-03-20 12:52:23] [Connection to 8.8.8.8 lost! | PID: 49048 | Start Time: 03/20/2025 11:23:02] 
+[2025-03-20 12:58:21] [Connection to 8.8.8.8 : 443 (chrome) established! | PID: 49048 | Start Time: 03/20/2025 11:23:02] 
+[2025-03-20 12:59:12] [Connection to 8.8.8.8 lost! | PID: 49048 | Start Time: 03/20/2025 11:23:02] 
+[2025-03-20 12:59:53] [Connection to 8.8.8.8 : 443 (msedge) established! | PID: 49048 | Start Time: 03/20/2025 11:23:02] 
+[2025-03-20 13:00:03] [Connection to 8.8.8.8 lost! | PID: 49048 | Start Time: 03/20/2025 11:23:02] 
+[2025-03-20 13:01:06] [Connection to 8.8.8.8 : 443 (msedge) established! | PID: 49048 | Start Time: 03/20/2025 11:23:02] 
+[2025-03-20 13:01:27] [Connection to 8.8.8.8 lost! | PID: 49048 | Start Time: 03/20/2025 11:23:02] 
+[2025-03-20 13:03:40] [Connection to 8.8.8.8 : 443 (Spotify) established! | PID: 49048 | Start Time: 03/20/2025 11:23:02] 
+[2025-03-20 13:03:50] [ALERT: Connection to 8.8.8.8 changed! New Port: 443 (msedgewebview2) | PID: 49048 | Start Time: 03/20/2025 11:23:02] 
+[2025-03-20 13:04:00] [Connection to 8.8.8.8 lost! | PID: 49048 | Start Time: 03/20/2025 11:23:02] 
+[2025-03-20 13:04:21] [Connection to 8.8.8.8 : 443 (msedge) established! | PID: 49048 | Start Time: 03/20/2025 11:23:02] 
+[2025-03-20 13:04:32] [Connection to 8.8.8.8 lost! | PID: 49048 | Start Time: 03/20/2025 11:23:02] 
+[2025-03-20 13:10:53] [Connection to 8.8.8.8 : 443 (msedge) established! | PID: 49048 | Start Time: 03/20/2025 11:23:02] 
+[2025-03-20 13:11:04] [Connection to 8.8.8.8 lost! | PID: 49048 | Start Time: 03/20/2025 11:23:02] 
+[2025-03-20 13:19:55] [Connection to 8.8.8.8 : 443 (chrome) established! | PID: 49048 | Start Time: 03/20/2025 11:23:02] 
+[2025-03-20 13:20:05] [Connection to 8.8.8.8 lost! | PID: 49048 | Start Time: 03/20/2025 11:23:02] 
+[2025-03-20 13:23:50] [Connection to 8.8.8.8 : 443 (chrome) established! | PID: 49048 | Start Time: 03/20/2025 11:23:02] 
+[2025-03-20 13:24:11] [Connection to 8.8.8.8 lost! | PID: 49048 | Start Time: 03/20/2025 11:23:02] 
+[2025-03-20 13:25:43] [Connection to 8.8.8.8 : 443 (Spotify) established! | PID: 49048 | Start Time: 03/20/2025 11:23:02] 
+[2025-03-20 13:25:54] [Connection to 8.8.8.8 lost! | PID: 49048 | Start Time: 03/20/2025 11:23:02] 
+[2025-03-20 13:38:02] [ALERT: Connection to 127.0.0.1 changed! New Port: 54383 (Code) | PID: 49048 | Start Time: 03/20/2025 11:23:02] 
+[2025-03-20 13:38:12] [ALERT: Connection to 127.0.0.1 changed! New Port: 50261 (expressvpnd) | PID: 49048 | Start Time: 03/20/2025 11:23:02] 
+[2025-03-20 13:45:01] [Connection to 8.8.8.8 : 443 (Spotify) established! | PID: 49048 | Start Time: 03/20/2025 11:23:02] 
+[2025-03-20 13:45:21] [Connection to 8.8.8.8 lost! | PID: 49048 | Start Time: 03/20/2025 11:23:02] 
+[2025-03-20 13:45:31] [Connection to 8.8.8.8 : 443 (chrome) established! | PID: 49048 | Start Time: 03/20/2025 11:23:02] 
+[2025-03-20 13:45:41] [Connection to 8.8.8.8 lost! | PID: 49048 | Start Time: 03/20/2025 11:23:02] 
+[2025-03-20 14:28:50] [Added file: C:\Users\tapso\OneDrive\Documents\resuktat.txt (Hash: ) | PID: 6776 | Start Time: 03/20/2025 14:28:50] 
+[2025-03-20 14:28:50] [Added file: C:\Users\tapso\OneDrive\Documents\Nouveau Document texte.txt (Hash: ) | PID: 6776 | Start Time: 03/20/2025 14:28:50] 
+[2025-03-20 19:13:27] [Added file: C:\Users\tapso\OneDrive\Documents\resuktat.txt (Hash: ED11F72D0BE328EF4AE5FC2FA7644643A8E8E0D12C27EAAC867645A0788A3523) | PID: 30708 | Start Time: 03/20/2025 19:13:27] 
+[2025-03-20 19:13:27] [Added file: C:\Users\tapso\OneDrive\Documents\Nouveau Document texte.txt (Hash: E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855) | PID: 30708 | Start Time: 03/20/2025 19:13:27] 
+[2025-03-20 19:26:48] [Added file: C:\Users\tapso\OneDrive\Documents\resuktat.txt (Hash: 9BBF7DC1236C2A83FF9FF88996DB7B984240526C758F0263D522C6FB7F2D1E8D) | PID: 41480 | Start Time: 03/20/2025 19:26:48] 
+[2025-03-20 19:26:48] [Added file: C:\Users\tapso\OneDrive\Documents\Nouveau Document texte.txt (Hash: E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855) | PID: 41480 | Start Time: 03/20/2025 19:26:48] 
+[2025-03-20 19:26:59] [Files] File changed! C:\Users\tapso\OneDrive\Documents\resuktat.txt | User: SUNNOGO_CALEB\tapso | Detected at: 2025-03-20 19:26:59 | Modified at: 03/20/2025 19:26:57 | Old Hash: 9BBF7DC1236C2A83FF9FF88996DB7B984240526C758F0263D522C6FB7F2D1E8D | New Hash: 74F628D3ADD3C5794D0B46E97CDF1591769D4811BDC3541E406288F62CB5B99A | PID: 41480 | Start Time: 03/20/2025 19:26:48
+[2025-03-20 19:54:35] [Added file: C:\Users\tapso\OneDrive\Documents\resuktat.txt (Hash: 47357E1F67A49396B0536FEAC15048DDEA51A790E9EAC7C3747CC2ECC6FEE49E) | PID: 12872 | Start Time: 03/20/2025 19:54:35] 
+[2025-03-20 19:54:35] [Added file: C:\Users\tapso\OneDrive\Documents\Nouveau Document texte.txt (Hash: E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855) | PID: 12872 | Start Time: 03/20/2025 19:54:35] 
+[2025-03-20 19:56:36] [Added file: C:\Users\tapso\OneDrive\Documents\resuktat.txt (Hash: ) | PID: 11240 | Start Time: 03/20/2025 19:56:36] 
+[2025-03-20 19:56:37] [Added file: C:\Users\tapso\OneDrive\Documents\Nouveau Document texte.txt (Hash: ) | PID: 11240 | Start Time: 03/20/2025 19:56:36] 
+[2025-03-20 19:58:49] [Added file: C:\Users\tapso\OneDrive\Documents\resuktat.txt (Hash: ) | PID: 31336 | Start Time: 03/20/2025 19:58:49] 
+[2025-03-20 19:58:49] [Added file: C:\Users\tapso\OneDrive\Documents\Nouveau Document texte.txt (Hash: ) | PID: 31336 | Start Time: 03/20/2025 19:58:49] 
+[2025-03-21 00:18:30] [Added file: C:\Users\tapso\OneDrive\Documents\resuktat.txt (Hash: B3971F72A4A0E9DF33B6DA58CAB47018D5FB2A1FA49391573196599DE4A1AE06) | PID: 12872 | Start Time: 03/21/2025 00:18:30] 
+[2025-03-21 00:18:30] [Added file: C:\Users\tapso\OneDrive\Documents\Nouveau Document texte.txt (Hash: E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855) | PID: 12872 | Start Time: 03/21/2025 00:18:30] 
+[2025-03-24 15:21:22] [Added file: C:\Users\tapso\OneDrive\Documents\resuktat.txt (Hash: ) | PID: 24992 | Start Time: 03/24/2025 15:21:22] 
+[2025-03-24 15:21:22] [Added file: C:\Users\tapso\OneDrive\Documents\Nouveau Document texte.txt (Hash: ) | PID: 24992 | Start Time: 03/24/2025 15:21:22] 
+[2025-03-24 15:42:53] [Added file: C:\Users\tapso\OneDrive\Documents\resuktat.txt (Hash: ) | PID: 50800 | Start Time: 03/24/2025 15:42:53] 
+[2025-03-24 15:42:53] [Added file: C:\Users\tapso\OneDrive\Documents\Nouveau Document texte.txt (Hash: ) | PID: 50800 | Start Time: 03/24/2025 15:42:53] 
+[2025-03-24 15:45:53] [Added file: C:\Users\tapso\OneDrive\Documents\resuktat.txt (Hash: B3971F72A4A0E9DF33B6DA58CAB47018D5FB2A1FA49391573196599DE4A1AE06) | PID: 12872 | Start Time: 03/24/2025 15:45:53] 
+[2025-03-24 15:45:53] [Added file: C:\Users\tapso\OneDrive\Documents\Nouveau Document texte.txt (Hash: E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855) | PID: 12872 | Start Time: 03/24/2025 15:45:53] 
+[2025-03-24 16:03:10] [Added file: C:\Users\tapso\OneDrive\Documents\resuktat.txt (Hash: ) | PID: 31904 | Start Time: 03/24/2025 16:03:09] 
+[2025-03-24 16:03:10] [Added file: C:\Users\tapso\OneDrive\Documents\Nouveau Document texte.txt (Hash: ) | PID: 31904 | Start Time: 03/24/2025 16:03:09] 
+[2025-03-24 17:07:50] [Added file: C:\Users\tapso\OneDrive\Documents\resuktat.txt (Hash: E2539A3ACF357618F9361A80738BA4FE586F856673D811BCF2D1C8E1FAB74FA7) | PID: 12872 | Start Time: 03/24/2025 17:07:50] 
+[2025-03-24 17:07:51] [Added file: C:\Users\tapso\OneDrive\Documents\Nouveau Document texte.txt (Hash: E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855) | PID: 12872 | Start Time: 03/24/2025 17:07:50] 
+[2025-03-24 17:08:59] [Added file: C:\Users\tapso\OneDrive\Documents\resuktat.txt (Hash: ) | PID: 41204 | Start Time: 03/24/2025 17:08:59] 
+[2025-03-24 17:08:59] [Added file: C:\Users\tapso\OneDrive\Documents\Nouveau Document texte.txt (Hash: ) | PID: 41204 | Start Time: 03/24/2025 17:08:59] 
+[2025-03-24 17:13:47] [Added file: C:\Users\tapso\OneDrive\Documents\resuktat.txt (Hash: E2539A3ACF357618F9361A80738BA4FE586F856673D811BCF2D1C8E1FAB74FA7) | PID: 12872 | Start Time: 03/24/2025 17:13:47] 
+[2025-03-24 17:13:47] [Added file: C:\Users\tapso\OneDrive\Documents\Nouveau Document texte.txt (Hash: E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855) | PID: 12872 | Start Time: 03/24/2025 17:13:47] 
+[2025-03-24 17:14:04] [Added file: C:\Users\tapso\OneDrive\Documents\resuktat.txt (Hash: E2539A3ACF357618F9361A80738BA4FE586F856673D811BCF2D1C8E1FAB74FA7) | PID: 12872 | Start Time: 03/24/2025 17:14:04] 
+[2025-03-24 17:14:04] [Added file: C:\Users\tapso\OneDrive\Documents\Nouveau Document texte.txt (Hash: E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855) | PID: 12872 | Start Time: 03/24/2025 17:14:04] 
+[2025-03-24 17:15:26] [Added file: C:\Users\tapso\OneDrive\Documents\resuktat.txt (Hash: ) | PID: 41768 | Start Time: 03/24/2025 17:15:26] 
+[2025-03-24 17:15:26] [Added file: C:\Users\tapso\OneDrive\Documents\Nouveau Document texte.txt (Hash: ) | PID: 41768 | Start Time: 03/24/2025 17:15:26] 
+[2025-03-25 08:28:03] [Added file: C:\Users\tapso\OneDrive\Documents\resuktat.txt (Hash: ) | PID: 17172 | Start Time: 03/25/2025 08:28:03] 
+[2025-03-25 08:28:03] [Added file: C:\Users\tapso\OneDrive\Documents\Nouveau Document texte.txt (Hash: ) | PID: 17172 | Start Time: 03/25/2025 08:28:03] 
+[2025-03-25 08:29:36] [Added file: C:\Users\tapso\OneDrive\Documents\resuktat.txt (Hash: E2539A3ACF357618F9361A80738BA4FE586F856673D811BCF2D1C8E1FAB74FA7) | PID: 12872 | Start Time: 03/25/2025 08:29:36] 
+[2025-03-25 08:29:36] [Added file: C:\Users\tapso\OneDrive\Documents\Nouveau Document texte.txt (Hash: E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855) | PID: 12872 | Start Time: 03/25/2025 08:29:36] 
+[2025-03-25 08:29:49] [Added file: C:\Users\tapso\OneDrive\Documents\resuktat.txt (Hash: ) | PID: 58588 | Start Time: 03/25/2025 08:29:49] 
+[2025-03-25 08:29:49] [Added file: C:\Users\tapso\OneDrive\Documents\Nouveau Document texte.txt (Hash: ) | PID: 58588 | Start Time: 03/25/2025 08:29:49] 
+[2025-03-25 08:48:33] [Added file: C:\\Users\\tapso\\OneDrive\\Documents\\resuktat.txt (Hash: E2539A3ACF357618F9361A80738BA4FE586F856673D811BCF2D1C8E1FAB74FA7) | PID: 12872 | Start Time: 03/25/2025 08:48:33] 
+[2025-03-25 08:48:33] [Added file: C:\\Users\\tapso\\OneDrive\\Documents\\Nouveau Document texte.txt (Hash: E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855) | PID: 12872 | Start Time: 03/25/2025 08:48:33] 
+[2025-03-25 08:49:19] [Added file: C:\Users\tapso\OneDrive\Documents\resuktat.txt (Hash: E2539A3ACF357618F9361A80738BA4FE586F856673D811BCF2D1C8E1FAB74FA7) | PID: 12872 | Start Time: 03/25/2025 08:49:19] 
+[2025-03-25 08:49:19] [Added file: C:\Users\tapso\OneDrive\Documents\Nouveau Document texte.txt (Hash: E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855) | PID: 12872 | Start Time: 03/25/2025 08:49:19] 
+[2025-03-25 08:49:30] [Files] File changed! C:\Users\tapso\OneDrive\Documents\resuktat.txt || By: SUNNOGO_CALEB\tapso | Modified at: 03/25/2025 08:49:28 | PID: 12872 | Start Time: 03/25/2025 08:49:19
+[2025-03-25 08:49:30] [Error] Collection was modified; enumeration operation may not execute.
+[2025-03-25 08:49:50] [Files] File changed! C:\Users\tapso\OneDrive\Documents\resuktat.txt || By: SUNNOGO_CALEB\tapso | Modified at: 03/25/2025 08:49:45 | PID: 12872 | Start Time: 03/25/2025 08:49:19
+[2025-03-25 08:49:50] [Error] Collection was modified; enumeration operation may not execute.
+[2025-03-25 08:51:08] [Added file: C:\Users\tapso\OneDrive\Documents\resuktat.txt (Hash: 2F707F204A44F98E46DD1002F40D6BC1F920FB48E10F6C0E5045AB7359023B47) | PID: 12872 | Start Time: 03/25/2025 08:51:08] 
+[2025-03-25 08:51:08] [Added file: C:\Users\tapso\OneDrive\Documents\Nouveau Document texte.txt (Hash: E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855) | PID: 12872 | Start Time: 03/25/2025 08:51:08] 
+[2025-03-25 08:51:18] [Files] File changed! C:\Users\tapso\OneDrive\Documents\resuktat.txt || By: SUNNOGO_CALEB\tapso | Modified at: 03/25/2025 08:51:17 | PID: 12872 | Start Time: 03/25/2025 08:51:08
+[2025-03-25 08:51:18] [Error] Collection was modified; enumeration operation may not execute.
+[2025-03-25 09:00:10] [Added file: C:\Users\tapso\OneDrive\Documents\resuktat.txt (Hash: 9CE334C2619A78366788396A2B0A6289E94E2A2B8E62428C2B3BF93055B0584F) | PID: 12872 | Start Time: 03/25/2025 09:00:10] 
+[2025-03-25 09:00:10] [Added file: C:\Users\tapso\OneDrive\Documents\Nouveau Document texte.txt (Hash: E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855) | PID: 12872 | Start Time: 03/25/2025 09:00:10] 
+[2025-03-25 09:00:20] [Files] File changed! C:\Users\tapso\OneDrive\Documents\resuktat.txt || By: SUNNOGO_CALEB\tapso | Modified at: 03/25/2025 09:00:16 | PID: 12872 | Start Time: 03/25/2025 09:00:10
+[2025-03-25 09:00:30] [Files] File changed! C:\Users\tapso\OneDrive\Documents\resuktat.txt || By: SUNNOGO_CALEB\tapso | Modified at: 03/25/2025 09:00:24 | PID: 12872 | Start Time: 03/25/2025 09:00:10
+[2025-03-25 09:06:25] [Added file: C:\Users\tapso\OneDrive\Documents\resuktat.txt (Hash: 9CE334C2619A78366788396A2B0A6289E94E2A2B8E62428C2B3BF93055B0584F) | PID: 12872 | Start Time: 03/25/2025 09:06:25] 
+[2025-03-25 09:06:25] [Added file: C:\Users\tapso\OneDrive\Documents\Nouveau Document texte.txt (Hash: E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855) | PID: 12872 | Start Time: 03/25/2025 09:06:25] 
+[2025-03-25 09:06:35] [Files] File changed! C:\Users\tapso\OneDrive\Documents\resuktat.txt || By: SUNNOGO_CALEB\tapso | Modified at: 03/25/2025 09:06:31 | PID: 12872 | Start Time: 03/25/2025 09:06:25
+[2025-03-25 09:06:40] [Files] File changed! C:\Users\tapso\OneDrive\Documents\resuktat.txt || By: SUNNOGO_CALEB\tapso | Modified at: 03/25/2025 09:06:40 | PID: 12872 | Start Time: 03/25/2025 09:06:25
+[2025-03-25 09:24:47] [WARNING: Folder not Found - 10 | PID: 51092 | Start Time: 03/25/2025 09:24:47] 
+[2025-03-25 09:24:48] [Error] The process cannot access the file 'C:\Users\tapso\OneDrive\Documents\GitHub\HIDS\Core\data\status.json' because it is being used by another process.
+[2025-03-25 09:24:48] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:48] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:48] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:48] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:48] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:48] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:48] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:48] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:49] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:49] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:49] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:49] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:49] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:49] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:49] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:49] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:49] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:49] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:49] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:49] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:49] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:49] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:49] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:49] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:49] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:49] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:49] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:49] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:49] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:49] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:49] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:49] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:50] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:50] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:50] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:50] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:50] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:53] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:53] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:53] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:53] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:53] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:53] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:53] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:53] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:53] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:53] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:54] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:54] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:54] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:54] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:54] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:54] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:54] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:54] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:54] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:54] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:54] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:54] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:54] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:54] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:54] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:54] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:54] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:54] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:54] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:54] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:54] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:54] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:54] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:54] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:54] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:54] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:55] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:55] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:55] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:55] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:55] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:55] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:55] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:55] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:55] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:55] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:55] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:55] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:55] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:55] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:55] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:55] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:55] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:55] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:55] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:55] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:55] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:55] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:55] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:55] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:55] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:55] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:55] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:56] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:56] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:56] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:56] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:56] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:56] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:56] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:56] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:56] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:56] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:56] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:56] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:56] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:56] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:56] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:56] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:56] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:56] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:56] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:56] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:56] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:56] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:56] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:56] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:56] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:56] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:57] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:57] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:57] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:57] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:57] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:57] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:57] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:57] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:57] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:57] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:57] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:57] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:57] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:57] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:57] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:57] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:57] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:57] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:57] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:57] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:57] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:57] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:57] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:57] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:57] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:57] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:58] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:58] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:58] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:58] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:58] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:58] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:58] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:58] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:58] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:58] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:58] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:58] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:58] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:58] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:58] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:58] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:58] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:58] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:58] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:58] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:58] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:58] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:58] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:58] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:58] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:59] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:59] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:59] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:59] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:59] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:59] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:59] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:59] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:59] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:59] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:59] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:59] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:59] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:59] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:59] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:59] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:59] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:59] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:59] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:59] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:59] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:59] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:59] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:24:59] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:25:00] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:25:00] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:25:00] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:25:00] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:25:00] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:25:00] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:25:00] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:25:00] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:25:00] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:25:00] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:25:00] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:25:00] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:25:00] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:25:00] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:25:00] [Error] Conversion from JSON failed with error: Additional text encountered after finished reading JSON content: {. Path '', line 30, position 0.
+[2025-03-25 09:29:01] [Added folder: C:\Users\tapso\OneDrive\Documents\Presentation (Hash: 2BCC9858E24C884E16C337265051C27158F4E826DD42CBECD3C0957F1B9D7857) | PID: 51092 | Start Time: 03/25/2025 09:29:01] 
+[2025-03-25 09:29:22] [Folders] Folder changed! C:\Users\tapso\OneDrive\Documents\Presentation || By: SUNNOGO_CALEB\tapso || Removed files: C:\Users\tapso\OneDrive\Documents\Presentation\Nouveau Document texte.txt
+[2025-03-25 09:29:27] [Folders] Folder changed! C:\Users\tapso\OneDrive\Documents\Presentation || By: SUNNOGO_CALEB\tapso || Added files: C:\Users\tapso\OneDrive\Documents\Presentation\Nouveau Document texte.txt
+[2025-03-25 09:32:59] [Connection to 127.0.0.1 : 50308 (expressvpnd) established! | PID: 47228 | Start Time: 03/25/2025 09:32:58] 
+[2025-03-25 09:40:05] [Connection to 127.0.0.1 : 50308 (expressvpnd) established! | PID: 47228 | Start Time: 03/25/2025 09:40:04] 
+[2025-03-25 09:55:51] [Connection to 127.0.0.1 : 50308 (expressvpnd) established! | PID: 47228 | Start Time: 03/25/2025 09:55:51] 
+[2025-03-25 09:56:19] [Connection to 127.0.0.1 : 50308 (expressvpnd) established! | PID: 47228 | Start Time: 03/25/2025 09:56:19] 
+[2025-03-25 13:05:32] [Added file: C:\Users\tapso\OneDrive\Documents\resuktat.txt (Hash: 88003CD69EABB697332E94ED148FB7E6804B896503F9E74D2CEA2ECF90A0FC76) | PID: 12872 | Start Time: 03/25/2025 13:05:32] 
+[2025-03-25 13:05:32] [Added file: C:\Users\tapso\OneDrive\Documents\Nouveau Document texte.txt (Hash: E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855) | PID: 12872 | Start Time: 03/25/2025 13:05:32] 
+[2025-03-25 14:25:53] [Connection to 127.0.0.1 : 50308 (expressvpnd) established! | PID: 47228 | Start Time: 03/25/2025 14:25:53] 
+[2025-03-25 14:26:36] [Added file: C:\Users\tapso\OneDrive\Documents\resuktat.txt (Hash: 88003CD69EABB697332E94ED148FB7E6804B896503F9E74D2CEA2ECF90A0FC76) | PID: 47228 | Start Time: 03/25/2025 14:26:36] 
+[2025-03-25 14:26:36] [Added file: C:\Users\tapso\OneDrive\Documents\Nouveau Document texte.txt (Hash: E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855) | PID: 47228 | Start Time: 03/25/2025 14:26:36] 
+[2025-03-25 14:28:16] [Added folder: C:\Users\tapso\OneDrive\Documents\Presentation (Hash: 2BCC9858E24C884E16C337265051C27158F4E826DD42CBECD3C0957F1B9D7857) | PID: 47228 | Start Time: 03/25/2025 14:28:15] 
+[2025-03-25 14:28:36] [Folders] Folder changed! C:\Users\tapso\OneDrive\Documents\Presentation || By: SUNNOGO_CALEB\tapso || Removed files: C:\Users\tapso\OneDrive\Documents\Presentation\Nouveau Document texte.txt
+[2025-03-25 14:28:46] [Folders] Folder changed! C:\Users\tapso\OneDrive\Documents\Presentation || By: SUNNOGO_CALEB\tapso || Added files: C:\Users\tapso\OneDrive\Documents\Presentation\Nouveau Document texte.txt
+[2025-03-26 11:21:50] [Added file: C:\Users\tapso\OneDrive\Documents\resuktat.txt (Hash: 83D49CCC4034BE70DCF12BF49110B9343BEBC51A3EFA9DA095693C84A96CB800) | PID: 27548 | Start Time: 03/26/2025 11:21:50] 
+[2025-03-26 11:21:50] [Added file: C:\Users\tapso\OneDrive\Documents\Nouveau Document texte.txt (Hash: E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855) | PID: 27548 | Start Time: 03/26/2025 11:21:50] 
+[2025-04-12 17:39:17] [Added file: C:\Users\tapso\OneDrive\Documents\resuktat.txt (Hash: 83D49CCC4034BE70DCF12BF49110B9343BEBC51A3EFA9DA095693C84A96CB800) | PID: 18640 | Start Time: 04/12/2025 17:39:16] 
+[2025-04-12 17:39:17] [Added file: C:\Users\tapso\OneDrive\Documents\Nouveau Document texte.txt (Hash: E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855) | PID: 18640 | Start Time: 04/12/2025 17:39:16] 
+[2025-04-12 17:40:38] [Files] File changed! C:\Users\tapso\OneDrive\Documents\resuktat.txt | User: SUNNOGO_CALEB\tapso | Detected at: 2025-04-12 17:40:38 | Modified at: 04/12/2025 17:40:30 | Old Hash: 83D49CCC4034BE70DCF12BF49110B9343BEBC51A3EFA9DA095693C84A96CB800 | New Hash: 92DBFF366238BA15CB9331D608E577197A6D91B92E80E963FD24F614A557979A | PID: 18640 | Start Time: 04/12/2025 17:39:16
+[2025-04-12 17:42:21] [Added file: C:\Users\tapso\OneDrive\Documents\resuktat.txt (Hash: 92DBFF366238BA15CB9331D608E577197A6D91B92E80E963FD24F614A557979A) | PID: 46476 | Start Time: 04/12/2025 17:42:21] 
+[2025-04-12 17:42:22] [Added file: C:\Users\tapso\OneDrive\Documents\Nouveau Document texte.txt (Hash: E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855) | PID: 46476 | Start Time: 04/12/2025 17:42:21] 
+[2025-04-12 17:42:42] [Files] File changed! C:\Users\tapso\OneDrive\Documents\resuktat.txt | User: SUNNOGO_CALEB\tapso | Detected at: 2025-04-12 17:42:42 | Modified at: 04/12/2025 17:42:37 | Old Hash: 92DBFF366238BA15CB9331D608E577197A6D91B92E80E963FD24F614A557979A | New Hash: 7E9D1D9D5A30473AD3C19AE2127C288F1ECF507A035EBDF481E21F9B65DC32BC | PID: 46476 | Start Time: 04/12/2025 17:42:21
+[2025-04-12 17:42:52] [Files] File changed! C:\Users\tapso\OneDrive\Documents\resuktat.txt | User: SUNNOGO_CALEB\tapso | Detected at: 2025-04-12 17:42:52 | Modified at: 04/12/2025 17:42:49 | Old Hash: 7E9D1D9D5A30473AD3C19AE2127C288F1ECF507A035EBDF481E21F9B65DC32BC | New Hash: 33ADBC19B147428D0698F993F16F6C4667C25929BE6886D19E675A3D70D5B2E9 | PID: 46476 | Start Time: 04/12/2025 17:42:21
+[2025-04-12 17:43:02] [Files] File changed! C:\Users\tapso\OneDrive\Documents\Nouveau Document texte.txt | User: SUNNOGO_CALEB\tapso | Detected at: 2025-04-12 17:43:02 | Modified at: 04/12/2025 17:43:01 | Old Hash: E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855 | New Hash: 2303E396DDCEF702DF8AE5014F8EA6EA4094ABD51C3BC9F3971E71C4FCCAEEC5 | PID: 46476 | Start Time: 04/12/2025 17:42:21
+[2025-04-12 17:44:32] [Added folder: C:\Users\tapso\OneDrive\Documents\Presentation (Hash: 2BCC9858E24C884E16C337265051C27158F4E826DD42CBECD3C0957F1B9D7857) | PID: 46476 | Start Time: 04/12/2025 17:44:32] 
+[2025-04-12 17:45:07] [Added folder: C:\Users\tapso\OneDrive\Documents\Presentation (Hash: 2BCC9858E24C884E16C337265051C27158F4E826DD42CBECD3C0957F1B9D7857) | PID: 46476 | Start Time: 04/12/2025 17:45:07] 
+[2025-04-12 17:46:14] [Added folder: C:\Users\tapso\OneDrive\Documents\Presentation (Hash: 2BCC9858E24C884E16C337265051C27158F4E826DD42CBECD3C0957F1B9D7857) | PID: 31332 | Start Time: 04/12/2025 17:46:14] 
+[2025-04-12 17:46:55] [Added folder: C:\Users\tapso\OneDrive\Documents\Presentation (Hash: 2BCC9858E24C884E16C337265051C27158F4E826DD42CBECD3C0957F1B9D7857) | PID: 18640 | Start Time: 04/12/2025 17:46:55] 
+[2025-04-12 17:47:08] [Added folder: C:\Users\tapso\OneDrive\Documents\Presentation (Hash: 2BCC9858E24C884E16C337265051C27158F4E826DD42CBECD3C0957F1B9D7857) | PID: 18640 | Start Time: 04/12/2025 17:47:08] 
+[2025-04-12 17:47:38] [Folders] Folder changed! C:\Users\tapso\OneDrive\Documents\Presentation || By: SUNNOGO_CALEB\tapso || Removed files: C:\Users\tapso\OneDrive\Documents\Presentation\Nouveau Document texte.txt
+[2025-04-12 17:47:48] [Folders] Folder changed! C:\Users\tapso\OneDrive\Documents\Presentation || By: SUNNOGO_CALEB\tapso || Added files: C:\Users\tapso\OneDrive\Documents\Presentation\Nouveau Document texte.txt

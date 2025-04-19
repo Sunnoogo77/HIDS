@@ -19,6 +19,7 @@ if (!(Test-Path $configFile)) {
 $config = Get-Content $configFile | ConvertFrom-Json
 
 
+
 $Interval = $config.email.interval
 
 # Email settings for Outlook
